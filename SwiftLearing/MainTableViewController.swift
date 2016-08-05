@@ -10,8 +10,10 @@ import UIKit
 
 class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchDisplayDelegate, UISearchBarDelegate {
     
-    var IndexArray: Array<String> = []
+//    var IndexArray: Array<String> = []
+     var IndexArray = [String]()
     var filteredArray = [String]()
+    var Tag = [Int]()
     
       var countryName : String!
     var shouldShowSearchResults = false
@@ -24,6 +26,8 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.Tableview.delegate = self
         
         IndexArray = ["1. How to Get local Json values","2. Get Web Site HTML Source","3. Local notification","4. Location base activity in Map","5. Push Notification Function","6.  Four Text Field Passcode"];
+//        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
+        Tag = [0,1,2,3,4,5,6];
         self.Tableview.reloadData()
       
         
@@ -40,8 +44,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        
+        let cell = self.Tableview.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
       
         if tableView == self.searchDisplayController!.searchResultsTableView {
             countryName = filteredArray[indexPath.row]
@@ -50,6 +53,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         }
         
         cell.textLabel?.text = countryName //self.IndexArray[indexPath.row]
+        
         return cell
     }
     
@@ -94,6 +98,8 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
             break;
         }
     }
+    
+    
 
     // *************************** Search Datasource and Deligate methods ************************************ // 
     

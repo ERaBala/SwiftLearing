@@ -3,11 +3,22 @@
 		"classType":"Push Notification",
 		"metaData":{
                         "title":"Push Notification Tutorial"
-						"step":{
+						"step-1":{
 							"title":"We need to know your title and name",
 							"dropDownArray":[],
 							"isErrorShow": "No"
 						}
+                         "step-2":{
+                         "title":"We need to know your title and name",
+                         "dropDownArray":[],
+                         "isErrorShow": "No"
+                         }
+                         "step-3":{
+                         "title":"We need to know your title and name",
+                         "dropDownArray":[],
+                         "isErrorShow": "No"
+                         }
+ 
 				   }
 	},
 	{
