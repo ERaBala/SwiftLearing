@@ -13,6 +13,8 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
 //    var IndexArray: Array<String> = []
      var IndexArray = [String]()
     var filteredArray = [String]()
+    var dictionaryvalues = [Int : String] ()  // Assain Dictionary value
+    
     var Tag = [Int]()
     
       var countryName : String!
@@ -25,7 +27,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.Tableview.dataSource = self
         self.Tableview.delegate = self
         
-        IndexArray = ["1. How to Get local Json values","2. Get Web Site HTML Source","3. Local notification","4. Location base activity in Map","5. Push Notification Function","6.  Four Text Field Passcode"];
+        IndexArray = ["1.How to Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Four Text Field Passcode"];
 //        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
         Tag = [0,1,2,3,4,5,6];
         self.Tableview.reloadData()
@@ -59,41 +61,47 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        switch indexPath.row
+        let indexPath = tableView.indexPathForSelectedRow!
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath)! as UITableViewCell
+        print(currentCell.textLabel!.text)
+        
+        let item = tableView.cellForRowAtIndexPath(indexPath)!.textLabel!.text!
+        
+        switch item
         {
-        case 0:
+        case "1.How to Get local Json values":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("JsonView") as! ViewController
                 self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 1:
+        case "2.Get Web Site HTML Source":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
             self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 2:
+        case "3.Local notification":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 3:
+        case "4.Location base activity in Map":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("location") as! LocationViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 4:
+        case "5.Push Notification Function":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PushNotification") as! PushNotificationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 5:
+        case "6.Four Text Field Passcode":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Passcode") as! PasscodeTextFieldVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 6:
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 7:
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 8:
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 9:
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
-            self.navigationController?.pushViewController(secondViewController, animated: true)
-        case 10:
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
-            self.navigationController?.pushViewController(secondViewController, animated: true)
+//        case 6:
+//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
+//        case 7:
+//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
+//        case 8:
+//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
+//        case 9:
+//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
+//        case 10:
+//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
+//            self.navigationController?.pushViewController(secondViewController, animated: true)
         default:
             break;
         }
