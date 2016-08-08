@@ -163,7 +163,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tb2-0C-0rE">
                                 <rect key="frame" x="123" y="84" width="354" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="354" id="yMW-R7-Wio"/>
+                                    <constraint firstAttribute="width" constant="354" id="O9A-XZ-aF9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -184,23 +184,26 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9X-B3-4I9">
                                 <rect key="frame" x="230" y="550" width="140" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="fQb-e7-fSM"/>
+                                    <constraint firstAttribute="width" constant="140" id="yxo-gw-rWp"/>
                                 </constraints>
                                 <state key="normal" title="Tutorial Site &gt;"/>
+                                <connections>
+                                    <segue destination="5ng-PC-uLn" kind="show" id="wjA-HF-2vO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tb2-0C-0rE" firstAttribute="centerX" secondItem="Hzq-rw-7gA" secondAttribute="centerX" id="dPM-H1-boC"/>
-                            <constraint firstItem="dE4-qD-x7O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dxb-PZ-4qO"/>
-                            <constraint firstItem="B9X-B3-4I9" firstAttribute="top" secondItem="dE4-qD-x7O" secondAttribute="bottom" constant="35" id="fRo-NV-oj6"/>
-                            <constraint firstItem="Hzq-rw-7gA" firstAttribute="top" secondItem="Tb2-0C-0rE" secondAttribute="bottom" constant="17" id="fhD-rT-56y"/>
-                            <constraint firstAttribute="bottom" secondItem="B9X-B3-4I9" secondAttribute="bottom" constant="20" symbolic="YES" id="gMd-hN-qJi"/>
-                            <constraint firstItem="Hzq-rw-7gA" firstAttribute="centerX" secondItem="dE4-qD-x7O" secondAttribute="centerX" id="h1Y-9h-XF8"/>
-                            <constraint firstItem="dE4-qD-x7O" firstAttribute="centerX" secondItem="B9X-B3-4I9" secondAttribute="centerX" id="reR-1U-gVV"/>
-                            <constraint firstItem="Tb2-0C-0rE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="rjC-yf-knS"/>
-                            <constraint firstItem="dE4-qD-x7O" firstAttribute="top" secondItem="Hzq-rw-7gA" secondAttribute="bottom" constant="24" id="wwI-hh-TgO"/>
-                            <constraint firstItem="dE4-qD-x7O" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xT0-sM-2Xh"/>
+                            <constraint firstItem="dE4-qD-x7O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1VZ-MU-nbd"/>
+                            <constraint firstItem="Hzq-rw-7gA" firstAttribute="top" secondItem="Tb2-0C-0rE" secondAttribute="bottom" constant="17" id="2hH-4a-xSx"/>
+                            <constraint firstItem="Tb2-0C-0rE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="9iN-uM-n3J"/>
+                            <constraint firstItem="Tb2-0C-0rE" firstAttribute="centerX" secondItem="Hzq-rw-7gA" secondAttribute="centerX" id="I0H-iv-hAv"/>
+                            <constraint firstItem="dE4-qD-x7O" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="W6Z-3r-Rok"/>
+                            <constraint firstItem="dE4-qD-x7O" firstAttribute="centerX" secondItem="B9X-B3-4I9" secondAttribute="centerX" id="bcP-a5-Q62"/>
+                            <constraint firstItem="dE4-qD-x7O" firstAttribute="top" secondItem="Hzq-rw-7gA" secondAttribute="bottom" constant="24" id="hF7-j2-W9S"/>
+                            <constraint firstItem="Hzq-rw-7gA" firstAttribute="centerX" secondItem="dE4-qD-x7O" secondAttribute="centerX" id="jyZ-iF-mlH"/>
+                            <constraint firstAttribute="bottom" secondItem="B9X-B3-4I9" secondAttribute="bottom" constant="20" symbolic="YES" id="rqn-kE-IMg"/>
+                            <constraint firstItem="B9X-B3-4I9" firstAttribute="top" secondItem="dE4-qD-x7O" secondAttribute="bottom" constant="35" id="tbr-7J-5bH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -210,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-563" y="1645"/>
+            <point key="canvasLocation" x="-574" y="1645"/>
         </scene>
         <!--Push NotificationVC-->
         <scene sceneID="oY5-Ct-yPB">
@@ -227,6 +230,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk4-n2-RtU">
                                 <rect key="frame" x="230" y="550" width="140" height="30"/>
                                 <state key="normal" title="Tutorial Site &gt;"/>
+                                <connections>
+                                    <action selector="TutorialWebSite:" destination="32S-bs-yfW" eventType="touchUpInside" id="1fJ-vq-bdz"/>
+                                    <segue destination="5ng-PC-uLn" kind="show" id="ioO-bD-tjZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -235,6 +242,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKO-yT-vJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="76" y="1645"/>
+        </scene>
+        <!--Tutorial-->
+        <scene sceneID="xiF-MM-hMO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tutorial" id="5ng-PC-uLn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMF-3w-o5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252.5" y="2240"/>
         </scene>
         <!--Local NotificationVC-->
         <scene sceneID="cN0-M6-3dA">
@@ -429,32 +444,20 @@
                                     <outlet property="delegate" destination="J2D-DF-41x" id="YHc-xw-sBk"/>
                                 </connections>
                             </mapView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M52-Nx-Fzg">
-                                <rect key="frame" x="210" y="550" width="180" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-TG-IN8">
-                                        <rect key="frame" x="20" y="0.0" width="140" height="30"/>
-                                        <state key="normal" title="Tutorial Site &gt;"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="9Gw-TG-IN8" firstAttribute="leading" secondItem="M52-Nx-Fzg" secondAttribute="leading" constant="20" id="UtY-01-FZM"/>
-                                    <constraint firstItem="9Gw-TG-IN8" firstAttribute="top" secondItem="M52-Nx-Fzg" secondAttribute="top" id="YJF-dg-MFE"/>
-                                    <constraint firstItem="9Gw-TG-IN8" firstAttribute="centerX" secondItem="M52-Nx-Fzg" secondAttribute="centerX" id="vE0-Ul-IXI"/>
-                                </constraints>
-                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-TG-IN8">
+                                <rect key="frame" x="230" y="562" width="140" height="30"/>
+                                <state key="normal" title="Tutorial Site &gt;"/>
+                                <connections>
+                                    <segue destination="5ng-PC-uLn" kind="show" id="mbs-hc-xhw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7MP-v5-Qbf" firstAttribute="bottom" secondItem="7Ii-qo-myP" secondAttribute="top" id="0dK-zQ-vHp"/>
-                            <constraint firstItem="M52-Nx-Fzg" firstAttribute="centerX" secondItem="7MP-v5-Qbf" secondAttribute="centerX" id="CpH-fk-J4U"/>
                             <constraint firstAttribute="trailing" secondItem="7MP-v5-Qbf" secondAttribute="trailing" id="Dn4-04-Ru8"/>
                             <constraint firstItem="7MP-v5-Qbf" firstAttribute="top" secondItem="OOd-Gg-VI4" secondAttribute="top" id="Twu-Cc-PPp"/>
-                            <constraint firstItem="M52-Nx-Fzg" firstAttribute="top" secondItem="VyN-bi-3UB" secondAttribute="bottom" constant="530" id="nD9-rr-M7J"/>
                             <constraint firstItem="7MP-v5-Qbf" firstAttribute="leading" secondItem="OOd-Gg-VI4" secondAttribute="leading" id="odi-Sl-Pv6"/>
-                            <constraint firstItem="M52-Nx-Fzg" firstAttribute="leading" secondItem="OOd-Gg-VI4" secondAttribute="leading" constant="210" id="wX7-7G-DKd"/>
-                            <constraint firstAttribute="bottom" secondItem="M52-Nx-Fzg" secondAttribute="bottom" constant="20" symbolic="YES" id="yTq-8M-asF"/>
                         </constraints>
                     </view>
                     <connections>
@@ -466,4 +469,7 @@
             <point key="canvasLocation" x="-253" y="986"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="wjA-HF-2vO"/>
+    </inferredMetricsTieBreakers>
 </document>

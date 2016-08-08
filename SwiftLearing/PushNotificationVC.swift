@@ -25,6 +25,11 @@ class PushNotificationVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func TutorialWebSite(sender: AnyObject) {
+        
+        
+        
+    }
 
     /*
     // MARK: - Navigation
