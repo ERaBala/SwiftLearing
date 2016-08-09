@@ -27,7 +27,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.Tableview.dataSource = self
         self.Tableview.delegate = self
         
-        IndexArray = ["1.How to Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Four Text Field Passcode","7.Stripe Integration"];
+        IndexArray = ["1.Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Text Field Passcode","7.Stripe Integration"];
 //        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
         Tag = [0,1,2,3,4,5,6];
         self.Tableview.reloadData()
@@ -69,11 +69,13 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         switch item
         {
-        case "1.How to Get local Json values":
+        case "1.Get local Json values":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("JsonView") as! ViewController
-                self.navigationController?.pushViewController(secondViewController, animated: true)
+            InGlobalFile.UserDefaultFunction(defaultName: "JsonView", defaultKey: "TUTORIAL_ID") .NSStringForKey()
+            self.navigationController?.pushViewController(secondViewController, animated: true)
         case "2.Get Web Site HTML Source":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
+            InGlobalFile.UserDefaultFunction(defaultName: "WebPageSource", defaultKey: "TUTORIAL_ID") .NSStringForKey()
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "3.Local notification":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
@@ -84,11 +86,11 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         case "5.Push Notification Function":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PushNotification") as! PushNotificationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-        case "6.Four Text Field Passcode":
+        case "6.Text Field Passcode":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Passcode") as! PasscodeTextFieldVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "7.Stripe Integration":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
+            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StripeIntagrationVC") as! StripeIntagrationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
 //        case 7:
 //            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource

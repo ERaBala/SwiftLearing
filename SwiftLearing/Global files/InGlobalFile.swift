@@ -10,7 +10,7 @@ import UIKit
 
 class InGlobalFile: NSObject {
     
-    struct  UserDefaultSample {
+    struct  UserDefaultFunction {
         
         var defaultName: String
         var defaultKey: String
@@ -18,10 +18,24 @@ class InGlobalFile: NSObject {
         func NSStringForKey()
         {
             NSUserDefaults.standardUserDefaults().setObject(defaultName, forKey: defaultKey)
-            //  InGlobalFile.UserDefaultSample(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()  // include this 
+            //  InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()  // include this
+        }
+    }
+    
+    struct Aleart {
+        
+        var Title: String
+        var Message: String
+        var btnTitle: String
+        
+        func ShowAleartFunction()
+        {
+            let alert = UIAlertView()
+            alert.title = Title
+            alert.message = Message
+            alert.addButtonWithTitle(btnTitle)
+            alert.show()
         }
     }
 
-    
-    
 }

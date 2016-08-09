@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .stringByReplacingOccurrencesOfString( " ", withString: "") as String
         
         print(deviceTokenString)
-        InGlobalFile.UserDefaultSample(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()
+        InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()
     }
     
     func applicationWillResignActive(application: UIApplication) {

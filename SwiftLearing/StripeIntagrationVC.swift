@@ -8,11 +8,15 @@
 
 import UIKit
 
-class StripeIntagrationVC: UIViewController {
+class StripeIntagrationVC: UIViewController,UITextFieldDelegate {
 
+    @IBOutlet weak var EmailTxtField: TxtFieldGloabClass!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    self.EmailTxtField.delegate = self
+        
+        self.EmailTxtField.delegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -20,5 +24,7 @@ class StripeIntagrationVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
+
+
+//    https://www.appcoda.com/ios-stripe-payment-integration/

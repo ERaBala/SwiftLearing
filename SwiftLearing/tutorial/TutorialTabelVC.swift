@@ -1,25 +1,21 @@
 //
-//  PushNotificationVC.swift
+//  TutorialTabelVC.swift
 //  SwiftLearing
 //
-//  Created by User on 22/07/16.
+//  Created by User on 08/08/16.
 //  Copyright © 2016 user. All rights reserved.
 //
 
 import UIKit
 
-class PushNotificationVC: UIViewController {
+class TutorialTabelVC: UIViewController {
 
-     let userKeyConstant = "DeviceToken"
-    
-    @IBOutlet weak var deviceToken: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let DEVICE_TOKEN =  NSUserDefaults.standardUserDefaults().stringForKey(userKeyConstant)
-         print(DEVICE_TOKEN)
-        self.deviceToken.text = DEVICE_TOKEN
- 
+        let DEVICE_TOKEN =  NSUserDefaults.standardUserDefaults().stringForKey("TUTORIAL_ID")
+        print(DEVICE_TOKEN)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,12 +23,10 @@ class PushNotificationVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func TutorialWebSite(sender: AnyObject) {
-        
-        
-        
-    }
 
+    @IBAction func DoneButton(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
@@ -44,4 +38,3 @@ class PushNotificationVC: UIViewController {
     */
 
 }
-    
