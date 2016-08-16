@@ -512,8 +512,11 @@
                                     <outlet property="delegate" destination="J2D-DF-41x" id="YHc-xw-sBk"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-TG-IN8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gw-TG-IN8">
                                 <rect key="frame" x="230" y="562" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="zDa-3l-Emm"/>
+                                </constraints>
                                 <state key="normal" title="Tutorial Site &gt;"/>
                                 <connections>
                                     <segue destination="5ng-PC-uLn" kind="show" id="mbs-hc-xhw"/>
@@ -524,12 +527,14 @@
                         <constraints>
                             <constraint firstItem="7MP-v5-Qbf" firstAttribute="bottom" secondItem="7Ii-qo-myP" secondAttribute="top" id="0dK-zQ-vHp"/>
                             <constraint firstAttribute="trailing" secondItem="7MP-v5-Qbf" secondAttribute="trailing" id="Dn4-04-Ru8"/>
+                            <constraint firstItem="9Gw-TG-IN8" firstAttribute="centerX" secondItem="7MP-v5-Qbf" secondAttribute="centerX" id="Phi-Tc-a8B"/>
                             <constraint firstItem="7MP-v5-Qbf" firstAttribute="top" secondItem="OOd-Gg-VI4" secondAttribute="top" id="Twu-Cc-PPp"/>
+                            <constraint firstItem="7Ii-qo-myP" firstAttribute="top" secondItem="9Gw-TG-IN8" secondAttribute="bottom" constant="8" symbolic="YES" id="cMT-Pp-qQS"/>
                             <constraint firstItem="7MP-v5-Qbf" firstAttribute="leading" secondItem="OOd-Gg-VI4" secondAttribute="leading" id="odi-Sl-Pv6"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="MapView" destination="7MP-v5-Qbf" id="6sf-3k-Mok"/>
+                        <outlet property="MapView" destination="7MP-v5-Qbf" id="27K-ho-AJS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibO-RW-P91" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -548,45 +553,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imc-Aa-bIi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imc-Aa-bIi" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
                                 <rect key="frame" x="20" y="145" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-AV-h1a">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expire Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-AV-h1a" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
                                 <rect key="frame" x="20" y="183" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KqV-v8-C7Y">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KqV-v8-C7Y" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
                                 <rect key="frame" x="20" y="221" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-So-O7v" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-So-O7v" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
                                 <rect key="frame" x="20" y="107" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezm-s4-9LI" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                                <rect key="frame" x="20" y="259" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYB-4D-ift">
+                                <rect key="frame" x="255" y="318" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="Ijk-EE-H2M"/>
+                                </constraints>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="SaveBtn:" destination="mZo-5P-xMH" eventType="touchUpInside" id="ioH-mO-0Gn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="imc-Aa-bIi" firstAttribute="leading" secondItem="R5L-AV-h1a" secondAttribute="leading" id="0cE-tI-8tk"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="leading" secondItem="yOH-1q-Y3J" secondAttribute="leadingMargin" id="0n3-xf-nu7"/>
-                            <constraint firstItem="R5L-AV-h1a" firstAttribute="trailing" secondItem="KqV-v8-C7Y" secondAttribute="trailing" id="3du-cQ-dHW"/>
-                            <constraint firstItem="R5L-AV-h1a" firstAttribute="leading" secondItem="KqV-v8-C7Y" secondAttribute="leading" id="5J8-4p-fVa"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="top" secondItem="gsx-uK-R5W" secondAttribute="bottom" constant="87" id="8D1-ti-BKh"/>
-                            <constraint firstItem="R5L-AV-h1a" firstAttribute="top" secondItem="imc-Aa-bIi" secondAttribute="bottom" constant="8" symbolic="YES" id="G1t-4f-Ieu"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="leading" secondItem="imc-Aa-bIi" secondAttribute="leading" id="O3s-US-OPg"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="trailing" secondItem="yOH-1q-Y3J" secondAttribute="trailingMargin" id="TTr-Ll-pZk"/>
-                            <constraint firstItem="imc-Aa-bIi" firstAttribute="top" secondItem="8hH-So-O7v" secondAttribute="bottom" constant="8" symbolic="YES" id="Uaa-5Q-tbH"/>
-                            <constraint firstItem="KqV-v8-C7Y" firstAttribute="top" secondItem="R5L-AV-h1a" secondAttribute="bottom" constant="8" symbolic="YES" id="nRH-JD-po7"/>
-                            <constraint firstItem="imc-Aa-bIi" firstAttribute="trailing" secondItem="R5L-AV-h1a" secondAttribute="trailing" id="tAr-sM-a9g"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="trailing" secondItem="imc-Aa-bIi" secondAttribute="trailing" id="wgp-z1-oLD"/>
+                            <constraint firstItem="8hH-So-O7v" firstAttribute="leading" secondItem="yOH-1q-Y3J" secondAttribute="leadingMargin" id="40V-P4-u19"/>
+                            <constraint firstItem="R5L-AV-h1a" firstAttribute="leading" secondItem="KqV-v8-C7Y" secondAttribute="leading" id="5P2-tC-mVd"/>
+                            <constraint firstItem="KqV-v8-C7Y" firstAttribute="trailing" secondItem="ezm-s4-9LI" secondAttribute="trailing" id="5wu-fI-t90"/>
+                            <constraint firstItem="8hH-So-O7v" firstAttribute="trailing" secondItem="yOH-1q-Y3J" secondAttribute="trailingMargin" id="A0q-Fo-fZA"/>
+                            <constraint firstItem="imc-Aa-bIi" firstAttribute="trailing" secondItem="R5L-AV-h1a" secondAttribute="trailing" id="Arp-Pz-lNV"/>
+                            <constraint firstItem="8hH-So-O7v" firstAttribute="trailing" secondItem="imc-Aa-bIi" secondAttribute="trailing" id="Cqv-TN-J07"/>
+                            <constraint firstItem="R5L-AV-h1a" firstAttribute="trailing" secondItem="KqV-v8-C7Y" secondAttribute="trailing" id="LLq-5l-CAB"/>
+                            <constraint firstItem="imc-Aa-bIi" firstAttribute="leading" secondItem="R5L-AV-h1a" secondAttribute="leading" id="QRw-Ua-krg"/>
+                            <constraint firstItem="ezm-s4-9LI" firstAttribute="centerX" secondItem="zYB-4D-ift" secondAttribute="centerX" id="UM1-75-UDI"/>
+                            <constraint firstItem="zYB-4D-ift" firstAttribute="top" secondItem="ezm-s4-9LI" secondAttribute="bottom" constant="29" id="ql4-A3-ls1"/>
+                            <constraint firstItem="8hH-So-O7v" firstAttribute="leading" secondItem="imc-Aa-bIi" secondAttribute="leading" id="qyS-hW-q0z"/>
+                            <constraint firstItem="imc-Aa-bIi" firstAttribute="top" secondItem="8hH-So-O7v" secondAttribute="bottom" constant="8" symbolic="YES" id="seO-eI-Qyg"/>
+                            <constraint firstItem="KqV-v8-C7Y" firstAttribute="leading" secondItem="ezm-s4-9LI" secondAttribute="leading" id="suy-O3-Mfy"/>
+                            <constraint firstItem="8hH-So-O7v" firstAttribute="top" secondItem="gsx-uK-R5W" secondAttribute="bottom" constant="87" id="tL8-E7-Cqo"/>
+                            <constraint firstItem="R5L-AV-h1a" firstAttribute="top" secondItem="imc-Aa-bIi" secondAttribute="bottom" constant="8" symbolic="YES" id="uFU-XV-4Ta"/>
+                            <constraint firstItem="KqV-v8-C7Y" firstAttribute="top" secondItem="R5L-AV-h1a" secondAttribute="bottom" constant="8" symbolic="YES" id="yT8-qT-6Cl"/>
+                            <constraint firstItem="ezm-s4-9LI" firstAttribute="top" secondItem="KqV-v8-C7Y" secondAttribute="bottom" constant="8" symbolic="YES" id="z4q-rC-m6O"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="AmountTF" destination="ezm-s4-9LI" id="mCK-i2-g9t"/>
+                        <outlet property="CVCTF" destination="KqV-v8-C7Y" id="573-0D-ew0"/>
+                        <outlet property="CardNumberTF" destination="imc-Aa-bIi" id="FjF-vE-UIv"/>
                         <outlet property="EmailTxtField" destination="8hH-So-O7v" id="GP9-1n-hx3"/>
+                        <outlet property="ExpireDateTF" destination="R5L-AV-h1a" id="G7h-ww-ABS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ylw-ME-vpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -595,6 +624,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ioO-bD-tjZ"/>
+        <segue reference="mbs-hc-xhw"/>
     </inferredMetricsTieBreakers>
 </document>

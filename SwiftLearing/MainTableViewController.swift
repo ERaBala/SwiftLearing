@@ -11,7 +11,7 @@ import UIKit
 class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchDisplayDelegate, UISearchBarDelegate {
     
 //    var IndexArray: Array<String> = []
-     var IndexArray = [String]()
+    var IndexArray = [String]()
     var filteredArray = [String]()
     var dictionaryvalues = [Int : String] ()  // Assain Dictionary value
     
@@ -29,7 +29,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         IndexArray = ["1.Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Text Field Passcode","7.Stripe Integration"];
 //        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
-        Tag = [0,1,2,3,4,5,6];
+     
         self.Tableview.reloadData()
       
         

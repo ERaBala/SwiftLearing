@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class LocationViewController: UIViewController,CLLocationManagerDelegate {
+class LocationViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDelegate {
 
     let locationManager = CLLocationManager()
     var geocoder : CLGeocoder = CLGeocoder()
@@ -31,7 +31,6 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate {
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.startUpdatingLocation()
         }
-        
     }
 
 
@@ -53,7 +52,7 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate {
             let stringLongitude : NSString = NSString(format: "%0.8f", currentLocation.coordinate.longitude)
             let stringLatitude : NSString = NSString(format: "%0.8f", currentLocation.coordinate.latitude)
             
-        locationManager.stopUpdatingLocation()
+//        locationManager.stopUpdatingLocation()
         
         // 1    send Latitude and Longitude Value
        location = CLLocationCoordinate2D(latitude: Double(stringLatitude as String)!,longitude: Double(stringLongitude as String)!)
@@ -80,10 +79,7 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate {
                 // println(“Problem with the data received from geocoder”)
                 print("Problem with the date recieved from geocoder")
             }
-            
         })
-        
-        
     }
     
     func displayLocationInfo(placemark: CLPlacemark) {
@@ -103,14 +99,7 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate {
             if(placemark.country != nil){
                 tempString = tempString +  placemark.country! + "\n"
             }
-
-        print(tempString)
-        print(placemark.subAdministrativeArea)
-        print(placemark.addressDictionary)
-        print(placemark.inlandWater)
-        print(placemark.location)
-        print(placemark.name)
-        print(placemark.subLocality)              */
+ */
         
         //3   annotation
         let annotation = MKPointAnnotation()
@@ -119,18 +108,38 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate {
         annotation.subtitle = placemark.country!
         MapView.addAnnotation(annotation)
 
-        //  ******** subAdministrativeArea , postalCode , locality , thoroughfare , subThoroughfare , administrativeArea
+        //  ******** placemark.name, subAdministrativeArea , postalCode , locality , thoroughfare , subThoroughfare , administrativeArea, subLocality, inlandWater, addressDictionary
 
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("Error while updating location " + error.localizedDescription)
     }
-    
-   
-
 }
 
+
+    private func addAnnotation(coordinate coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
+       
+        
+    }
+
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation { return nil }
+        
+        let identifier = "CustomAnnotation"
+        
+        var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+        
+        if annotationView == nil {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView!.canShowCallout = true
+            annotationView!.image = UIImage(named: "star.png")!   // go ahead and use forced unwrapping and you'll be notified if it can't be found; alternatively, use `guard` statement to accomplish the same thing and show a custom error message
+        } else {
+            annotationView!.annotation = annotation
+        }
+        
+        return annotationView
+    }
 
 
 /*  <---************** Note **************--->

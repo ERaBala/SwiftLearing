@@ -10,6 +10,7 @@
 		4CEC5E9A1B17C44179DEFC92 /* libPods-SwiftLearing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */; };
 		CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */; };
 		CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */; };
+		CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5535011D5A03BE005422B3 /* libStripe.a */; };
 		CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */; };
 		CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071951D3F454400A1904C /* MainTableViewController.swift */; };
 		CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071971D3F734500A1904C /* LocalNotificationVC.swift */; };
@@ -35,6 +36,9 @@
 		6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftLearing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InGlobalFile.swift; path = "SwiftLearing/Global files/InGlobalFile.swift"; sourceTree = "<group>"; };
 		CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TxtFieldGloabClass.swift; path = "SwiftLearing/Global files/TxtFieldGloabClass.swift"; sourceTree = "<group>"; };
+		CE5534F81D59E46C005422B3 /* SwiftLearing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLearing-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE5534FE1D59FD75005422B3 /* SwiftLearing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftLearing.entitlements; sourceTree = "<group>"; };
+		CE5535011D5A03BE005422B3 /* libStripe.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStripe.a; path = "../../../Library/Developer/Xcode/DerivedData/SwiftLearing-gmtrcfqipuuxxtbbjzgqedobkjjj/Build/Products/Debug-iphonesimulator/Stripe/libStripe.a"; sourceTree = "<group>"; };
 		CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = getWebPageSource.swift; path = getWebPage/getWebPageSource.swift; sourceTree = "<group>"; };
 		CE6071951D3F454400A1904C /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CE6071971D3F734500A1904C /* LocalNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalNotificationVC.swift; path = LocalNotification/LocalNotificationVC.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */,
 				CE71897E1D58AC4000D1F397 /* EventKit.framework in Frameworks */,
 				4CEC5E9A1B17C44179DEFC92 /* libPods-SwiftLearing.a in Frameworks */,
 			);
@@ -78,9 +83,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CE5534FC1D59E481005422B3 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC0C271CF42AD000B0B1A0 /* LaunchScreen.storyboard */,
+				CEAC0C251CF42AD000B0B1A0 /* Assets.xcassets */,
+				CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */,
+				CE5534F81D59E46C005422B3 /* SwiftLearing-Bridging-Header.h */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		CE5534FD1D59E7D8005422B3 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CEAC0C1E1CF42AD000B0B1A0 /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
 		CE7589C21D41E49200DE27D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE5535011D5A03BE005422B3 /* libStripe.a */,
 				CE7589C01D41E48900DE27D4 /* EventKit.framework */,
 				6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */,
 			);
@@ -123,8 +148,8 @@
 		CEAC0C1D1CF42ACF00B0B1A0 /* SwiftLearing */ = {
 			isa = PBXGroup;
 			children = (
+				CE5534FE1D59FD75005422B3 /* SwiftLearing.entitlements */,
 				CEAC0C221CF42AD000B0B1A0 /* Main.storyboard */,
-				CEAC0C1E1CF42AD000B0B1A0 /* AppDelegate.swift */,
 				CE6071951D3F454400A1904C /* MainTableViewController.swift */,
 				CEAC0C201CF42AD000B0B1A0 /* ViewController.swift */,
 				CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */,
@@ -133,9 +158,8 @@
 				CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */,
 				CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */,
 				CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */,
-				CEAC0C251CF42AD000B0B1A0 /* Assets.xcassets */,
-				CEAC0C271CF42AD000B0B1A0 /* LaunchScreen.storyboard */,
-				CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */,
+				CE5534FD1D59E7D8005422B3 /* AppDelegate */,
+				CE5534FC1D59E481005422B3 /* SupportingFiles */,
 			);
 			path = SwiftLearing;
 			sourceTree = "<group>";
@@ -179,6 +203,9 @@
 						DevelopmentTeam = ESS76MX5U7;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.OMC = {
 								enabled = 1;
 							};
 							com.apple.Push = {
@@ -417,13 +444,22 @@
 			baseConfigurationReference = 4688458BF188FFDE061C179D /* Pods-SwiftLearing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Avinash Shridhar (47CJB63KBD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Avinash Shridhar (47CJB63KBD)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftLearing/SwiftLearing.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftLearing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Stripe",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibtest.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SwiftLearing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -432,13 +468,21 @@
 			baseConfigurationReference = 1CB98E3BF2BB4FEE3F6E17B9 /* Pods-SwiftLearing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Avinash Shridhar (47CJB63KBD)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Avinash Shridhar (47CJB63KBD)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SwiftLearing/SwiftLearing.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftLearing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Stripe",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibtest.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/SwiftLearing-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

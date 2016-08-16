@@ -28,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
+        
+        // ==================== Stripe Configuration ==================== //
+       Stripe.setDefaultPublishableKey("pk_test_4bQMrrawci1v0iZeTC0AR3wU")
 
         return true
     }
