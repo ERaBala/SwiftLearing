@@ -8,7 +8,8 @@
 
 import UIKit
 import Fabric
-//import Stripe
+import Stripe
+
 
 
 @UIApplicationMain
@@ -33,11 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerForRemoteNotifications()
         
         // ==================== Stripe Configuration ==================== //
-       Fabric.with([STPAPIClient.self])
+        Fabric.with([STPAPIClient.self])
         
         // TODO: Replace with your own test publishable key
         // TODO: DEBUG ONLY! Remove / conditionalize before launch
-        Stripe.setDefaultPublishableKey("pk_test_4bQMrrawci1v0iZeTC0AR3wU")
+//        Stripe.setDefaultPublishableKey("pk_test_4bQMrrawci1v0iZeTC0AR3wU")
 
 
         return true
