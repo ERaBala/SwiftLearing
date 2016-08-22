@@ -21,12 +21,7 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Fabric (1.6.7)
-  - Stripe (4.0.3):
-    - Stripe/Checkout (= 4.0.3)
-    - Stripe/Core (= 4.0.3)
-  - Stripe/Checkout (4.0.3):
-    - Stripe/Core
-  - Stripe/Core (4.0.3)
+  - Stripe (8.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
@@ -36,8 +31,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  Stripe: 43a4307dc789483a61668d187c4a917d1348b0b6
+  Stripe: c3e325e0309dcdcb478191dbd298082823a210c1
 
-PODFILE CHECKSUM: 40bd23eecd82d6077240eb852f312b70086377e7
+PODFILE CHECKSUM: 34c26da293bf2f2f756b739dd53392889d3844ed
 
 COCOAPODS: 1.0.0.rc.2

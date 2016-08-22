@@ -22,7 +22,7 @@ class StripeIntagrationVC: UIViewController,UITextFieldDelegate {
     self.EmailTxtField.delegate = self
         // Do any additional setup after loading the view.
     }
-    
+    /*
 /*    func paymentContextDidChange(paymentContext: STPPaymentContext) {
         self.activityIndicator.animating = paymentContext.loading
         self.paymentButton.enabled = paymentContext.selectedPaymentMethod != nil
@@ -163,7 +163,7 @@ class StripeIntagrationVC: UIViewController,UITextFieldDelegate {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
-
+*/
 }
 
 //    https://www.appcoda.com/ios-stripe-payment-integration/

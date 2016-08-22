@@ -38,7 +38,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // TODO: Replace with your own test publishable key
         // TODO: DEBUG ONLY! Remove / conditionalize before launch
-//        Stripe.setDefaultPublishableKey("pk_test_4bQMrrawci1v0iZeTC0AR3wU")
+        Stripe.setDefaultPublishableKey("pk_test_4bQMrrawci1v0iZeTC0AR3wU")
+//        STPPaymentConfiguration.sharedConfiguration().publishableKey = "pk_test_4bQMrrawci1v0iZeTC0AR3wU"
+        // do any other necessary launch configuration
 
 
         return true
