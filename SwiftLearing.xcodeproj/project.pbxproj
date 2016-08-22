@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4CEC5E9A1B17C44179DEFC92 /* libPods-SwiftLearing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */; };
+		CE20E5621D643F5700E5F65F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7589C01D41E48900DE27D4 /* EventKit.framework */; };
+		CE20E5631D643F5700E5F65F /* EventKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE7589C01D41E48900DE27D4 /* EventKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */; };
 		CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */; };
 		CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5535011D5A03BE005422B3 /* libStripe.a */; };
@@ -20,6 +22,8 @@
 		CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */; };
 		CE7589C41D4238BB00DE27D4 /* PushNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */; };
 		CE7F14621D40D4A90074825C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F14611D40D4A90074825C /* LocationViewController.swift */; };
+		CE86B1161D6ADE8100323A44 /* Fabric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE86B1151D6ADE8100323A44 /* Fabric.storyboard */; };
+		CE86B1181D6ADEF200323A44 /* StripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86B1171D6ADEF200323A44 /* StripsViewController.swift */; };
 		CE9E500C1D5338FC006E290A /* Tutorial.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9E500B1D5338FC006E290A /* Tutorial.json */; };
 		CEA05DDE1D4749CB007AABD8 /* PasscodeTextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */; };
 		CEAC0C1F1CF42AD000B0B1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC0C1E1CF42AD000B0B1A0 /* AppDelegate.swift */; };
@@ -29,6 +33,20 @@
 		CEAC0C291CF42AD000B0B1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC0C271CF42AD000B0B1A0 /* LaunchScreen.storyboard */; };
 		CEAC0C311CF42D7600B0B1A0 /* Registration.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAC0C301CF42D7600B0B1A0 /* Registration.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE20E5641D643F5700E5F65F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE20E5631D643F5700E5F65F /* EventKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1CB98E3BF2BB4FEE3F6E17B9 /* Pods-SwiftLearing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearing.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearing/Pods-SwiftLearing.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +66,8 @@
 		CE7589C01D41E48900DE27D4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationVC.swift; sourceTree = "<group>"; };
 		CE7F14611D40D4A90074825C /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationViewController.swift; path = location/LocationViewController.swift; sourceTree = "<group>"; };
+		CE86B1151D6ADE8100323A44 /* Fabric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fabric.storyboard; path = SwiftLearing/Fabric/Fabric.storyboard; sourceTree = "<group>"; };
+		CE86B1171D6ADEF200323A44 /* StripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripsViewController.swift; path = SwiftLearing/Fabric/StripsViewController.swift; sourceTree = "<group>"; };
 		CE9E500B1D5338FC006E290A /* Tutorial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Tutorial.json; path = tutorial/Tutorial.json; sourceTree = "<group>"; };
 		CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeTextFieldVC.swift; sourceTree = "<group>"; };
 		CEAC0C1B1CF42ACF00B0B1A0 /* SwiftLearing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftLearing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +77,7 @@
 		CEAC0C251CF42AD000B0B1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAC0C281CF42AD000B0B1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEAC0C301CF42D7600B0B1A0 /* Registration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Registration.json; sourceTree = "<group>"; };
+		CEAC0C301CF42D7600B0B1A0 /* Registration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Registration.json; path = ../Registration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE20E5621D643F5700E5F65F /* EventKit.framework in Frameworks */,
 				CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */,
 				CE71897E1D58AC4000D1F397 /* EventKit.framework in Frameworks */,
 				4CEC5E9A1B17C44179DEFC92 /* libPods-SwiftLearing.a in Frameworks */,
@@ -86,12 +107,14 @@
 		CE5534FC1D59E481005422B3 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC0C301CF42D7600B0B1A0 /* Registration.json */,
 				CEAC0C271CF42AD000B0B1A0 /* LaunchScreen.storyboard */,
 				CEAC0C251CF42AD000B0B1A0 /* Assets.xcassets */,
 				CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */,
 				CE5534F81D59E46C005422B3 /* SwiftLearing-Bridging-Header.h */,
 			);
 			name = SupportingFiles;
+			path = SwiftLearing;
 			sourceTree = "<group>";
 		};
 		CE5534FD1D59E7D8005422B3 /* AppDelegate */ = {
@@ -100,6 +123,7 @@
 				CEAC0C1E1CF42AD000B0B1A0 /* AppDelegate.swift */,
 			);
 			name = AppDelegate;
+			path = SwiftLearing;
 			sourceTree = "<group>";
 		};
 		CE7589C21D41E49200DE27D4 /* Frameworks */ = {
@@ -110,6 +134,24 @@
 				6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE86B1141D6ADE2900323A44 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				CE86B1151D6ADE8100323A44 /* Fabric.storyboard */,
+				CE86B1171D6ADEF200323A44 /* StripsViewController.swift */,
+			);
+			name = Fabric;
+			sourceTree = "<group>";
+		};
+		CE86B11A1D6AE8B200323A44 /* NSObjectClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */,
+				CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */,
+			);
+			name = NSObjectClass;
 			sourceTree = "<group>";
 		};
 		CE9E500A1D5338EA006E290A /* Tutorial */ = {
@@ -126,11 +168,12 @@
 		CEAC0C121CF42ACF00B0B1A0 = {
 			isa = PBXGroup;
 			children = (
-				CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */,
-				CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */,
-				CEAC0C301CF42D7600B0B1A0 /* Registration.json */,
+				CE5534FD1D59E7D8005422B3 /* AppDelegate */,
+				CE86B11A1D6AE8B200323A44 /* NSObjectClass */,
+				CE86B1141D6ADE2900323A44 /* Fabric */,
 				CE9E500A1D5338EA006E290A /* Tutorial */,
 				CEAC0C1D1CF42ACF00B0B1A0 /* SwiftLearing */,
+				CE5534FC1D59E481005422B3 /* SupportingFiles */,
 				CE7589C21D41E49200DE27D4 /* Frameworks */,
 				CEAC0C1C1CF42ACF00B0B1A0 /* Products */,
 				2BDB836EA5FDB7FEF9962009 /* Pods */,
@@ -158,8 +201,6 @@
 				CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */,
 				CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */,
 				CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */,
-				CE5534FD1D59E7D8005422B3 /* AppDelegate */,
-				CE5534FC1D59E481005422B3 /* SupportingFiles */,
 			);
 			path = SwiftLearing;
 			sourceTree = "<group>";
@@ -178,6 +219,8 @@
 				CEAE39921D4F58E8000494CB /* ShellScript */,
 				0B12C6AD2897BE0506DAD30B /* 📦 Embed Pods Frameworks */,
 				51A8B97674C4D828AD0CF940 /* 📦 Copy Pods Resources */,
+				CE20E5641D643F5700E5F65F /* Embed Frameworks */,
+				CE86B1191D6AE25600323A44 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -241,6 +284,7 @@
 				CEAC0C311CF42D7600B0B1A0 /* Registration.json in Resources */,
 				CEAC0C291CF42AD000B0B1A0 /* LaunchScreen.storyboard in Resources */,
 				CEAC0C261CF42AD000B0B1A0 /* Assets.xcassets in Resources */,
+				CE86B1161D6ADE8100323A44 /* Fabric.storyboard in Resources */,
 				CE9E500C1D5338FC006E290A /* Tutorial.json in Resources */,
 				CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */,
 				CEAC0C241CF42AD000B0B1A0 /* Main.storyboard in Resources */,
@@ -295,6 +339,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearing/Pods-SwiftLearing-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CE86B1191D6AE25600323A44 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 2e6ae4cae003b2bfffc43ed414ac41857cace231 5fdbd2ea1fb62f2300c4b5d3bfc0195c601f607df259d6347c8920a653f2c652";
+		};
 		CEAE39921D4F58E8000494CB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE86B1181D6ADEF200323A44 /* StripsViewController.swift in Sources */,
 				CEA05DDE1D4749CB007AABD8 /* PasscodeTextFieldVC.swift in Sources */,
 				CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */,
 				CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */,
