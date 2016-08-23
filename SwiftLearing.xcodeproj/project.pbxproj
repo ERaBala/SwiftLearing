@@ -15,6 +15,8 @@
 		CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071951D3F454400A1904C /* MainTableViewController.swift */; };
 		CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071971D3F734500A1904C /* LocalNotificationVC.swift */; };
 		CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE611F851D589BDB00DF5476 /* Tutorial.storyboard */; };
+		CE63B9F31D6C30D3004BC712 /* Fabric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */; };
+		CE63B9F51D6C30F2004BC712 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */; };
 		CE71897D1D58A95E00D1F397 /* StripeIntagrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */; };
 		CE71897E1D58AC4000D1F397 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7589C01D41E48900DE27D4 /* EventKit.framework */; };
 		CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */; };
@@ -43,6 +45,8 @@
 		CE6071951D3F454400A1904C /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CE6071971D3F734500A1904C /* LocalNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalNotificationVC.swift; path = LocalNotification/LocalNotificationVC.swift; sourceTree = "<group>"; };
 		CE611F851D589BDB00DF5476 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = StoryBoard/Tutorial.storyboard; sourceTree = "<group>"; };
+		CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fabric.storyboard; path = SwiftLearing/FabricFiles/Fabric.storyboard; sourceTree = "<group>"; };
+		CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripeViewController.swift; path = SwiftLearing/FabricFiles/StripeViewController.swift; sourceTree = "<group>"; };
 		CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeIntagrationVC.swift; sourceTree = "<group>"; };
 		CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTabelVC.swift; path = tutorial/TutorialTabelVC.swift; sourceTree = "<group>"; };
 		CE7589C01D41E48900DE27D4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -57,7 +61,7 @@
 		CEAC0C251CF42AD000B0B1A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEAC0C281CF42AD000B0B1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CEAC0C301CF42D7600B0B1A0 /* Registration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Registration.json; sourceTree = "<group>"; };
+		CEAC0C301CF42D7600B0B1A0 /* Registration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Registration.json; path = ../Registration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,12 +90,14 @@
 		CE5534FC1D59E481005422B3 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				CEAC0C301CF42D7600B0B1A0 /* Registration.json */,
 				CEAC0C271CF42AD000B0B1A0 /* LaunchScreen.storyboard */,
 				CEAC0C251CF42AD000B0B1A0 /* Assets.xcassets */,
 				CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */,
 				CE5534F81D59E46C005422B3 /* SwiftLearing-Bridging-Header.h */,
 			);
 			name = SupportingFiles;
+			path = SwiftLearing;
 			sourceTree = "<group>";
 		};
 		CE5534FD1D59E7D8005422B3 /* AppDelegate */ = {
@@ -100,6 +106,25 @@
 				CEAC0C1E1CF42AD000B0B1A0 /* AppDelegate.swift */,
 			);
 			name = AppDelegate;
+			path = SwiftLearing;
+			sourceTree = "<group>";
+		};
+		CE63B9F01D6C3048004BC712 /* NSObjectClass */ = {
+			isa = PBXGroup;
+			children = (
+				CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */,
+				CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */,
+			);
+			name = NSObjectClass;
+			sourceTree = "<group>";
+		};
+		CE63B9F11D6C3085004BC712 /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */,
+				CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */,
+			);
+			name = Fabric;
 			sourceTree = "<group>";
 		};
 		CE7589C21D41E49200DE27D4 /* Frameworks */ = {
@@ -126,11 +151,12 @@
 		CEAC0C121CF42ACF00B0B1A0 = {
 			isa = PBXGroup;
 			children = (
-				CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */,
-				CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */,
-				CEAC0C301CF42D7600B0B1A0 /* Registration.json */,
+				CE63B9F01D6C3048004BC712 /* NSObjectClass */,
+				CE5534FD1D59E7D8005422B3 /* AppDelegate */,
+				CE63B9F11D6C3085004BC712 /* Fabric */,
 				CE9E500A1D5338EA006E290A /* Tutorial */,
 				CEAC0C1D1CF42ACF00B0B1A0 /* SwiftLearing */,
+				CE5534FC1D59E481005422B3 /* SupportingFiles */,
 				CE7589C21D41E49200DE27D4 /* Frameworks */,
 				CEAC0C1C1CF42ACF00B0B1A0 /* Products */,
 				2BDB836EA5FDB7FEF9962009 /* Pods */,
@@ -158,8 +184,6 @@
 				CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */,
 				CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */,
 				CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */,
-				CE5534FD1D59E7D8005422B3 /* AppDelegate */,
-				CE5534FC1D59E481005422B3 /* SupportingFiles */,
 			);
 			path = SwiftLearing;
 			sourceTree = "<group>";
@@ -241,6 +265,7 @@
 				CEAC0C311CF42D7600B0B1A0 /* Registration.json in Resources */,
 				CEAC0C291CF42AD000B0B1A0 /* LaunchScreen.storyboard in Resources */,
 				CEAC0C261CF42AD000B0B1A0 /* Assets.xcassets in Resources */,
+				CE63B9F31D6C30D3004BC712 /* Fabric.storyboard in Resources */,
 				CE9E500C1D5338FC006E290A /* Tutorial.json in Resources */,
 				CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */,
 				CEAC0C241CF42AD000B0B1A0 /* Main.storyboard in Resources */,
@@ -319,6 +344,7 @@
 				CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */,
 				CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */,
 				CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */,
+				CE63B9F51D6C30F2004BC712 /* StripeViewController.swift in Sources */,
 				CE71897D1D58A95E00D1F397 /* StripeIntagrationVC.swift in Sources */,
 				CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */,
 				CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */,
