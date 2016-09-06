@@ -9,13 +9,15 @@
 import UIKit
 
 class TutorialTabelVC: UIViewController {
-
+    
+    var ValuesGetFromVC: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         let DEVICE_TOKEN =  NSUserDefaults.standardUserDefaults().stringForKey("TUTORIAL_ID")
         print(DEVICE_TOKEN)
-        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,21 +29,12 @@ class TutorialTabelVC: UIViewController {
     @IBAction func DoneButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
 
-
-
 /* ---------------------- Two Different StoryBoard ----------------------
+ 
  https://developer.apple.com/library/ios/recipes/xcode_help-IB_storyboard/Chapters/RefactorStoryboard.html
  http://www.timdietrich.me/blog/swift-multiple-storyboards/
  

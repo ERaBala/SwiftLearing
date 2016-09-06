@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aqb-lN-UxQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aqb-lN-UxQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -129,6 +129,7 @@
                                 </constraints>
                                 <state key="normal" title="Tutorial Site &gt;"/>
                                 <connections>
+                                    <action selector="TutorialBtn:" destination="grX-md-qai" eventType="touchUpInside" id="Jxb-c1-ISv"/>
                                     <segue destination="5ng-PC-uLn" kind="show" id="cDM-DY-eGb"/>
                                 </connections>
                             </button>
@@ -282,6 +283,60 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKO-yT-vJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="66" y="1645"/>
+        </scene>
+        <!--Deep LinkVC-->
+        <scene sceneID="WQU-ub-the">
+            <objects>
+                <viewController storyboardIdentifier="DeepLinkVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VRP-me-AP5" customClass="DeepLinkVC" customModule="SwiftLearing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b43-F2-EE1"/>
+                        <viewControllerLayoutGuide type="bottom" id="xc6-Td-TTe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3jx-2K-TIO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlO-2p-lpe">
+                                <rect key="frame" x="246" y="562" width="108" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="e38-7o-BaS"/>
+                                </constraints>
+                                <state key="normal" title="Tutorial Steps &gt;"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeepLink Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imx-eZ-wxc">
+                                <rect key="frame" x="167" y="73" width="267" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="jCZ-9a-6GK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41n-dv-LMH">
+                                <rect key="frame" x="178" y="285" width="246" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="ZeS-zc-a41"/>
+                                </constraints>
+                                <state key="normal" title="Test By Using Safari Browser (Click)"/>
+                                <connections>
+                                    <action selector="SafariLink:" destination="VRP-me-AP5" eventType="touchUpInside" id="BIQ-Pa-1vT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Imx-eZ-wxc" firstAttribute="top" secondItem="b43-F2-EE1" secondAttribute="bottom" constant="53" id="0Ri-4G-K4Z"/>
+                            <constraint firstItem="Imx-eZ-wxc" firstAttribute="centerX" secondItem="41n-dv-LMH" secondAttribute="centerX" id="MBP-pH-MIZ"/>
+                            <constraint firstItem="41n-dv-LMH" firstAttribute="centerY" secondItem="3jx-2K-TIO" secondAttribute="centerY" id="YTh-DY-0dt"/>
+                            <constraint firstItem="xc6-Td-TTe" firstAttribute="top" secondItem="SlO-2p-lpe" secondAttribute="bottom" constant="8" symbolic="YES" id="aL4-0F-HBC"/>
+                            <constraint firstItem="41n-dv-LMH" firstAttribute="centerX" secondItem="SlO-2p-lpe" secondAttribute="centerX" constant="1" id="c5N-pF-VDT"/>
+                            <constraint firstItem="Imx-eZ-wxc" firstAttribute="centerX" secondItem="3jx-2K-TIO" secondAttribute="centerX" id="sl9-4B-PtL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA0-Vj-CV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="2315"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="xiF-MM-hMO">
@@ -541,89 +596,8 @@
             </objects>
             <point key="canvasLocation" x="-253" y="986"/>
         </scene>
-        <!--Stripe IntagrationVC-->
-        <scene sceneID="wvY-mD-4ur">
-            <objects>
-                <viewController storyboardIdentifier="StripeIntagrationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mZo-5P-xMH" customClass="StripeIntagrationVC" customModule="SwiftLearing" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gsx-uK-R5W"/>
-                        <viewControllerLayoutGuide type="bottom" id="mig-v9-M7B"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yOH-1q-Y3J">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imc-Aa-bIi" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="145" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expire Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-AV-h1a" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="183" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KqV-v8-C7Y" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="221" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-So-O7v" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="107" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezm-s4-9LI" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="259" width="560" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYB-4D-ift">
-                                <rect key="frame" x="255" y="318" width="91" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="91" id="Ijk-EE-H2M"/>
-                                </constraints>
-                                <state key="normal" title="SAVE"/>
-                                <connections>
-                                    <action selector="SaveBtn:" destination="mZo-5P-xMH" eventType="touchUpInside" id="ioH-mO-0Gn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="leading" secondItem="yOH-1q-Y3J" secondAttribute="leadingMargin" id="40V-P4-u19"/>
-                            <constraint firstItem="R5L-AV-h1a" firstAttribute="leading" secondItem="KqV-v8-C7Y" secondAttribute="leading" id="5P2-tC-mVd"/>
-                            <constraint firstItem="KqV-v8-C7Y" firstAttribute="trailing" secondItem="ezm-s4-9LI" secondAttribute="trailing" id="5wu-fI-t90"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="trailing" secondItem="yOH-1q-Y3J" secondAttribute="trailingMargin" id="A0q-Fo-fZA"/>
-                            <constraint firstItem="imc-Aa-bIi" firstAttribute="trailing" secondItem="R5L-AV-h1a" secondAttribute="trailing" id="Arp-Pz-lNV"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="trailing" secondItem="imc-Aa-bIi" secondAttribute="trailing" id="Cqv-TN-J07"/>
-                            <constraint firstItem="R5L-AV-h1a" firstAttribute="trailing" secondItem="KqV-v8-C7Y" secondAttribute="trailing" id="LLq-5l-CAB"/>
-                            <constraint firstItem="imc-Aa-bIi" firstAttribute="leading" secondItem="R5L-AV-h1a" secondAttribute="leading" id="QRw-Ua-krg"/>
-                            <constraint firstItem="ezm-s4-9LI" firstAttribute="centerX" secondItem="zYB-4D-ift" secondAttribute="centerX" id="UM1-75-UDI"/>
-                            <constraint firstItem="zYB-4D-ift" firstAttribute="top" secondItem="ezm-s4-9LI" secondAttribute="bottom" constant="29" id="ql4-A3-ls1"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="leading" secondItem="imc-Aa-bIi" secondAttribute="leading" id="qyS-hW-q0z"/>
-                            <constraint firstItem="imc-Aa-bIi" firstAttribute="top" secondItem="8hH-So-O7v" secondAttribute="bottom" constant="8" symbolic="YES" id="seO-eI-Qyg"/>
-                            <constraint firstItem="KqV-v8-C7Y" firstAttribute="leading" secondItem="ezm-s4-9LI" secondAttribute="leading" id="suy-O3-Mfy"/>
-                            <constraint firstItem="8hH-So-O7v" firstAttribute="top" secondItem="gsx-uK-R5W" secondAttribute="bottom" constant="87" id="tL8-E7-Cqo"/>
-                            <constraint firstItem="R5L-AV-h1a" firstAttribute="top" secondItem="imc-Aa-bIi" secondAttribute="bottom" constant="8" symbolic="YES" id="uFU-XV-4Ta"/>
-                            <constraint firstItem="KqV-v8-C7Y" firstAttribute="top" secondItem="R5L-AV-h1a" secondAttribute="bottom" constant="8" symbolic="YES" id="yT8-qT-6Cl"/>
-                            <constraint firstItem="ezm-s4-9LI" firstAttribute="top" secondItem="KqV-v8-C7Y" secondAttribute="bottom" constant="8" symbolic="YES" id="z4q-rC-m6O"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="AmountTF" destination="ezm-s4-9LI" id="mCK-i2-g9t"/>
-                        <outlet property="CVCTF" destination="KqV-v8-C7Y" id="573-0D-ew0"/>
-                        <outlet property="CardNumberTF" destination="imc-Aa-bIi" id="FjF-vE-UIv"/>
-                        <outlet property="EmailTxtField" destination="8hH-So-O7v" id="GP9-1n-hx3"/>
-                        <outlet property="ExpireDateTF" destination="R5L-AV-h1a" id="G7h-ww-ABS"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ylw-ME-vpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="414" y="986"/>
-        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mbs-hc-xhw"/>
+        <segue reference="cDM-DY-eGb"/>
     </inferredMetricsTieBreakers>
 </document>

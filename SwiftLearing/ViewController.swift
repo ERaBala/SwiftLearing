@@ -44,5 +44,11 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func TutorialBtn(sender: AnyObject) {
+        let storyboard = UIStoryboard(name: "Tutorial", bundle: nil)
+        let vc = storyboard.instantiateViewControllerWithIdentifier("TutorialTabelVC") as! TutorialTabelVC
+        vc.ValuesGetFromVC = "Get Json Values form Local"
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

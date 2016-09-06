@@ -27,7 +27,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.Tableview.dataSource = self
         self.Tableview.delegate = self
         
-        IndexArray = ["1.Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Text Field Passcode","7.Stripe Integration"];
+        IndexArray = ["1.Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Text Field Passcode","7.Stripe Integration","8.Deep link"];
 //        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
      
         self.Tableview.reloadData()
@@ -90,11 +90,12 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Passcode") as! PasscodeTextFieldVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "7.Stripe Integration":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StripeIntagrationVC") as! StripeIntagrationVC
+            let storyboard = UIStoryboard(name: "Fabric", bundle: nil)
+            let vc = storyboard.instantiateViewControllerWithIdentifier("StripeViewController") as! StripeViewController
+           self.navigationController?.pushViewController(vc, animated: true)
+        case "8.Deep link":
+            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DeepLinkVC") as! DeepLinkVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-//        case 7:
-//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
 //        case 8:
 //            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
 //            self.navigationController?.pushViewController(secondViewController, animated: true)
@@ -108,7 +109,6 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
             break;
         }
     }
-    
     
 
     // *************************** Search Datasource and Deligate methods ************************************ // 
@@ -131,6 +131,5 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.filterTableViewForEnterText(self.searchDisplayController!.searchBar.text!)
         return true
     }
-    
 
 }

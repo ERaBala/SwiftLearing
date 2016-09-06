@@ -7,11 +7,14 @@
 //
 
 import UIKit
+//import Stripe
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var loadedEnoughToDeepLink : Bool = false
+    var deepLink : RemoteNotificationDeepLink?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -29,8 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
         
-        // ==================== Stripe Configuration ==================== //
-       Stripe.setDefaultPublishableKey("pk_test_4bQMrrawci1v0iZeTC0AR3wU")
+//         ==================== Stripe Configuration ==================== //
+//        STPPaymentConfiguration.sharedConfiguration().publishableKey = "pk_test_4bQMrrawci1v0iZeTC0AR3wU"
+//        STPPaymentConfiguration.sharedConfiguration().appleMerchantIdentifier = "merchant.com.ibtest.app"
 
         return true
     }
@@ -38,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification)
     {
-        application.applicationIconBadgeNumber = 0
+        application.applicationIconBadgeNumber = 1000
     }
     
     
@@ -48,7 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    // ====================  get Device token to send for Push notification  ==================== //
+//     ====================  get Device token to send for Push notification  ==================== //
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         
         let characterSet: NSCharacterSet = NSCharacterSet(charactersInString: "<>")
@@ -60,6 +64,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print(deviceTokenString)
         InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()
     }
+    
+    
+//     ============================= Deep Link Methods ============================= //
+    
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        
+        if url.host == nil
+        {
+            return true;
+        }
+        
+        let urlString = url.absoluteString
+        let queryArray = urlString.componentsSeparatedByString("/")
+        let query = queryArray[2]
+        
+        // Check if article
+        if query.rangeOfString("article") != nil
+        {
+            let data = urlString.componentsSeparatedByString("/")
+            if data.count >= 3
+            {
+                let parameter = data[3]
+                let userInfo = [RemoteNotificationDeepLinkAppSectionKey : parameter ]
+                self.applicationHandleRemoteNotification(application, didReceiveRemoteNotification: userInfo)
+            }
+        }
+        
+        return true
+    }
+    
+    func applicationHandleRemoteNotification(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject])
+    {
+        if application.applicationState == UIApplicationState.Background || application.applicationState == UIApplicationState.Inactive
+        {
+            let canDoNow = loadedEnoughToDeepLink
+            
+            self.deepLink = RemoteNotificationDeepLink.create(userInfo)
+            
+            if canDoNow
+            {
+                self.triggerDeepLinkIfPresent()
+            }
+        }
+    }
+    
+    func triggerDeepLinkIfPresent() -> Bool
+    {
+        self.loadedEnoughToDeepLink = true
+        let ret = (self.deepLink?.trigger() != nil)
+        self.deepLink = nil
+        return ret
+    }
+
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -82,10 +140,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        // handle url here
-        return true
-    }
+    
 
 }
 

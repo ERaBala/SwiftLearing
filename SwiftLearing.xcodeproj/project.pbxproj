@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CEC5E9A1B17C44179DEFC92 /* libPods-SwiftLearing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */; };
+		15A034736BE37ED551DD35A9 /* Pods_SwiftLearing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE86BDC8FD02A28500831EF2 /* Pods_SwiftLearing.framework */; };
 		CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */; };
 		CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */; };
-		CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5535011D5A03BE005422B3 /* libStripe.a */; };
+		CE586D1C1D7EA1F00080DBB2 /* 404-error.png in Resources */ = {isa = PBXBuildFile; fileRef = CE586D1B1D7EA1F00080DBB2 /* 404-error.png */; };
+		CE586D1E1D7ED2C50080DBB2 /* DeepLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE586D1D1D7ED2C50080DBB2 /* DeepLinkVC.swift */; };
+		CE586D211D7EFCE70080DBB2 /* RemoteNotificationDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE586D201D7EFCE70080DBB2 /* RemoteNotificationDeepLink.swift */; };
 		CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */; };
 		CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071951D3F454400A1904C /* MainTableViewController.swift */; };
 		CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071971D3F734500A1904C /* LocalNotificationVC.swift */; };
 		CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE611F851D589BDB00DF5476 /* Tutorial.storyboard */; };
 		CE63B9F31D6C30D3004BC712 /* Fabric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */; };
 		CE63B9F51D6C30F2004BC712 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */; };
-		CE71897D1D58A95E00D1F397 /* StripeIntagrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */; };
 		CE71897E1D58AC4000D1F397 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7589C01D41E48900DE27D4 /* EventKit.framework */; };
 		CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */; };
 		CE7589C41D4238BB00DE27D4 /* PushNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */; };
@@ -35,19 +36,20 @@
 /* Begin PBXFileReference section */
 		1CB98E3BF2BB4FEE3F6E17B9 /* Pods-SwiftLearing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearing.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearing/Pods-SwiftLearing.release.xcconfig"; sourceTree = "<group>"; };
 		4688458BF188FFDE061C179D /* Pods-SwiftLearing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftLearing/Pods-SwiftLearing.debug.xcconfig"; sourceTree = "<group>"; };
-		6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftLearing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InGlobalFile.swift; path = "SwiftLearing/Global files/InGlobalFile.swift"; sourceTree = "<group>"; };
 		CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TxtFieldGloabClass.swift; path = "SwiftLearing/Global files/TxtFieldGloabClass.swift"; sourceTree = "<group>"; };
 		CE5534F81D59E46C005422B3 /* SwiftLearing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftLearing-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE5534FE1D59FD75005422B3 /* SwiftLearing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SwiftLearing.entitlements; sourceTree = "<group>"; };
 		CE5535011D5A03BE005422B3 /* libStripe.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libStripe.a; path = "../../../Library/Developer/Xcode/DerivedData/SwiftLearing-gmtrcfqipuuxxtbbjzgqedobkjjj/Build/Products/Debug-iphonesimulator/Stripe/libStripe.a"; sourceTree = "<group>"; };
+		CE586D1B1D7EA1F00080DBB2 /* 404-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "404-error.png"; path = "SwiftLearing/Resorces/404-error.png"; sourceTree = "<group>"; };
+		CE586D1D1D7ED2C50080DBB2 /* DeepLinkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeepLinkVC.swift; path = Deeplink/DeepLinkVC.swift; sourceTree = "<group>"; };
+		CE586D201D7EFCE70080DBB2 /* RemoteNotificationDeepLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RemoteNotificationDeepLink.swift; path = Deeplink/RemoteNotificationDeepLink.swift; sourceTree = "<group>"; };
 		CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = getWebPageSource.swift; path = getWebPage/getWebPageSource.swift; sourceTree = "<group>"; };
 		CE6071951D3F454400A1904C /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CE6071971D3F734500A1904C /* LocalNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalNotificationVC.swift; path = LocalNotification/LocalNotificationVC.swift; sourceTree = "<group>"; };
 		CE611F851D589BDB00DF5476 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = StoryBoard/Tutorial.storyboard; sourceTree = "<group>"; };
 		CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fabric.storyboard; path = SwiftLearing/FabricFiles/Fabric.storyboard; sourceTree = "<group>"; };
 		CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripeViewController.swift; path = SwiftLearing/FabricFiles/StripeViewController.swift; sourceTree = "<group>"; };
-		CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeIntagrationVC.swift; sourceTree = "<group>"; };
 		CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTabelVC.swift; path = tutorial/TutorialTabelVC.swift; sourceTree = "<group>"; };
 		CE7589C01D41E48900DE27D4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationVC.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 		CEAC0C281CF42AD000B0B1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAC0C301CF42D7600B0B1A0 /* Registration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Registration.json; path = ../Registration.json; sourceTree = "<group>"; };
+		FE86BDC8FD02A28500831EF2 /* Pods_SwiftLearing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftLearing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */,
 				CE71897E1D58AC4000D1F397 /* EventKit.framework in Frameworks */,
-				4CEC5E9A1B17C44179DEFC92 /* libPods-SwiftLearing.a in Frameworks */,
+				15A034736BE37ED551DD35A9 /* Pods_SwiftLearing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +111,23 @@
 			path = SwiftLearing;
 			sourceTree = "<group>";
 		};
+		CE586D1A1D7EA1D60080DBB2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE586D1B1D7EA1F00080DBB2 /* 404-error.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CE586D1F1D7EFCCD0080DBB2 /* DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+				CE586D201D7EFCE70080DBB2 /* RemoteNotificationDeepLink.swift */,
+				CE586D1D1D7ED2C50080DBB2 /* DeepLinkVC.swift */,
+			);
+			name = DeepLink;
+			sourceTree = "<group>";
+		};
 		CE63B9F01D6C3048004BC712 /* NSObjectClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +151,7 @@
 			children = (
 				CE5535011D5A03BE005422B3 /* libStripe.a */,
 				CE7589C01D41E48900DE27D4 /* EventKit.framework */,
-				6F95C5697344D28BEDC8B140 /* libPods-SwiftLearing.a */,
+				FE86BDC8FD02A28500831EF2 /* Pods_SwiftLearing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,6 +175,7 @@
 				CE63B9F11D6C3085004BC712 /* Fabric */,
 				CE9E500A1D5338EA006E290A /* Tutorial */,
 				CEAC0C1D1CF42ACF00B0B1A0 /* SwiftLearing */,
+				CE586D1A1D7EA1D60080DBB2 /* Resources */,
 				CE5534FC1D59E481005422B3 /* SupportingFiles */,
 				CE7589C21D41E49200DE27D4 /* Frameworks */,
 				CEAC0C1C1CF42ACF00B0B1A0 /* Products */,
@@ -183,7 +203,7 @@
 				CE7F14611D40D4A90074825C /* LocationViewController.swift */,
 				CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */,
 				CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */,
-				CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */,
+				CE586D1F1D7EFCCD0080DBB2 /* DeepLink */,
 			);
 			path = SwiftLearing;
 			sourceTree = "<group>";
@@ -269,6 +289,7 @@
 				CE9E500C1D5338FC006E290A /* Tutorial.json in Resources */,
 				CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */,
 				CEAC0C241CF42AD000B0B1A0 /* Main.storyboard in Resources */,
+				CE586D1C1D7EA1F00080DBB2 /* 404-error.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,13 +366,14 @@
 				CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */,
 				CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */,
 				CE63B9F51D6C30F2004BC712 /* StripeViewController.swift in Sources */,
-				CE71897D1D58A95E00D1F397 /* StripeIntagrationVC.swift in Sources */,
 				CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */,
 				CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */,
 				CE7F14621D40D4A90074825C /* LocationViewController.swift in Sources */,
+				CE586D1E1D7ED2C50080DBB2 /* DeepLinkVC.swift in Sources */,
 				CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */,
 				CEAC0C211CF42AD000B0B1A0 /* ViewController.swift in Sources */,
 				CE7589C41D4238BB00DE27D4 /* PushNotificationVC.swift in Sources */,
+				CE586D211D7EFCE70080DBB2 /* RemoteNotificationDeepLink.swift in Sources */,
 				CEAC0C1F1CF42AD000B0B1A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
