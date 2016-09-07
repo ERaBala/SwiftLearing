@@ -29,7 +29,6 @@ class TutorialTabelVC: UIViewController {
     @IBAction func DoneButton(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
 
 }
 

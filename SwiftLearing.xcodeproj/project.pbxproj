@@ -16,6 +16,8 @@
 		CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */; };
 		CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071951D3F454400A1904C /* MainTableViewController.swift */; };
 		CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071971D3F734500A1904C /* LocalNotificationVC.swift */; };
+		CE607BAC1D7FD2EC00651B16 /* TutorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE607BAB1D7FD2EC00651B16 /* TutorialTableViewCell.swift */; };
+		CE607BAE1D7FD64500651B16 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE607BAD1D7FD64500651B16 /* WebViewController.swift */; };
 		CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE611F851D589BDB00DF5476 /* Tutorial.storyboard */; };
 		CE63B9F31D6C30D3004BC712 /* Fabric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */; };
 		CE63B9F51D6C30F2004BC712 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */; };
@@ -47,6 +49,8 @@
 		CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = getWebPageSource.swift; path = getWebPage/getWebPageSource.swift; sourceTree = "<group>"; };
 		CE6071951D3F454400A1904C /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CE6071971D3F734500A1904C /* LocalNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalNotificationVC.swift; path = LocalNotification/LocalNotificationVC.swift; sourceTree = "<group>"; };
+		CE607BAB1D7FD2EC00651B16 /* TutorialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTableViewCell.swift; path = tutorial/TutorialTableViewCell.swift; sourceTree = "<group>"; };
+		CE607BAD1D7FD64500651B16 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = tutorial/WebViewController.swift; sourceTree = "<group>"; };
 		CE611F851D589BDB00DF5476 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = StoryBoard/Tutorial.storyboard; sourceTree = "<group>"; };
 		CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fabric.storyboard; path = SwiftLearing/FabricFiles/Fabric.storyboard; sourceTree = "<group>"; };
 		CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripeViewController.swift; path = SwiftLearing/FabricFiles/StripeViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				CE611F851D589BDB00DF5476 /* Tutorial.storyboard */,
 				CE9E500B1D5338FC006E290A /* Tutorial.json */,
 				CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */,
+				CE607BAB1D7FD2EC00651B16 /* TutorialTableViewCell.swift */,
+				CE607BAD1D7FD64500651B16 /* WebViewController.swift */,
 			);
 			name = Tutorial;
 			path = SwiftLearing;
@@ -368,6 +374,7 @@
 				CE63B9F51D6C30F2004BC712 /* StripeViewController.swift in Sources */,
 				CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */,
 				CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */,
+				CE607BAC1D7FD2EC00651B16 /* TutorialTableViewCell.swift in Sources */,
 				CE7F14621D40D4A90074825C /* LocationViewController.swift in Sources */,
 				CE586D1E1D7ED2C50080DBB2 /* DeepLinkVC.swift in Sources */,
 				CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */,
@@ -375,6 +382,7 @@
 				CE7589C41D4238BB00DE27D4 /* PushNotificationVC.swift in Sources */,
 				CE586D211D7EFCE70080DBB2 /* RemoteNotificationDeepLink.swift in Sources */,
 				CEAC0C1F1CF42AD000B0B1A0 /* AppDelegate.swift in Sources */,
+				CE607BAE1D7FD64500651B16 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
