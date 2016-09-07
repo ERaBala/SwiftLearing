@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>EPCalendarPicker.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwiftLearing.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,7 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9ED313C0D5634334AC3D108D4FBD815A</key>
+		<key>3F4ED3136065D01037865D960C84E133</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4BDD03C6C8F827E8D49610FCB1A97F9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

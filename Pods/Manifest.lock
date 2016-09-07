@@ -20,13 +20,16 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - EPCalendarPicker (1.0.8)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
+  - EPCalendarPicker
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  EPCalendarPicker: 0348fe754a7650582665ecc5ac98f4c0a0db0e91
 
-PODFILE CHECKSUM: 9fc73d08a0e153c6540e2da9bbda3ff2ac460a32
+PODFILE CHECKSUM: ffa35436a66893e90276a97172f6b4f3593969a8
 
 COCOAPODS: 1.0.0.rc.2

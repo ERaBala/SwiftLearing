@@ -18,6 +18,7 @@
 		CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071971D3F734500A1904C /* LocalNotificationVC.swift */; };
 		CE607BAC1D7FD2EC00651B16 /* TutorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE607BAB1D7FD2EC00651B16 /* TutorialTableViewCell.swift */; };
 		CE607BAE1D7FD64500651B16 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE607BAD1D7FD64500651B16 /* WebViewController.swift */; };
+		CE607BB01D8036EC00651B16 /* CalenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE607BAF1D8036EC00651B16 /* CalenderVC.swift */; };
 		CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE611F851D589BDB00DF5476 /* Tutorial.storyboard */; };
 		CE63B9F31D6C30D3004BC712 /* Fabric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */; };
 		CE63B9F51D6C30F2004BC712 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */; };
@@ -51,6 +52,7 @@
 		CE6071971D3F734500A1904C /* LocalNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalNotificationVC.swift; path = LocalNotification/LocalNotificationVC.swift; sourceTree = "<group>"; };
 		CE607BAB1D7FD2EC00651B16 /* TutorialTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTableViewCell.swift; path = tutorial/TutorialTableViewCell.swift; sourceTree = "<group>"; };
 		CE607BAD1D7FD64500651B16 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = tutorial/WebViewController.swift; sourceTree = "<group>"; };
+		CE607BAF1D8036EC00651B16 /* CalenderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalenderVC.swift; path = Calender/CalenderVC.swift; sourceTree = "<group>"; };
 		CE611F851D589BDB00DF5476 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = StoryBoard/Tutorial.storyboard; sourceTree = "<group>"; };
 		CE63B9F21D6C30D3004BC712 /* Fabric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fabric.storyboard; path = SwiftLearing/FabricFiles/Fabric.storyboard; sourceTree = "<group>"; };
 		CE63B9F41D6C30F2004BC712 /* StripeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripeViewController.swift; path = SwiftLearing/FabricFiles/StripeViewController.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 				CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */,
 				CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */,
 				CE586D1F1D7EFCCD0080DBB2 /* DeepLink */,
+				CE607BAF1D8036EC00651B16 /* CalenderVC.swift */,
 			);
 			path = SwiftLearing;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				CE586D211D7EFCE70080DBB2 /* RemoteNotificationDeepLink.swift in Sources */,
 				CEAC0C1F1CF42AD000B0B1A0 /* AppDelegate.swift in Sources */,
 				CE607BAE1D7FD64500651B16 /* WebViewController.swift in Sources */,
+				CE607BB01D8036EC00651B16 /* CalenderVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

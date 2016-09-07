@@ -27,7 +27,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         self.Tableview.dataSource = self
         self.Tableview.delegate = self
         
-        IndexArray = ["1.Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Text Field Passcode","7.Stripe Integration","8.Deep link"];
+        IndexArray = ["1.Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Text Field Passcode","7.Stripe Integration","8.Deep link","9.calendar"];
 //        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
      
         self.Tableview.reloadData()
@@ -96,9 +96,9 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         case "8.Deep link":
             let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DeepLinkVC") as! DeepLinkVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-//        case 8:
-//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
+        case "9.calendar":
+            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("CalenderVC") as! CalenderVC
+            self.navigationController?.pushViewController(secondViewController, animated: true)
 //        case 9:
 //            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
 //            self.navigationController?.pushViewController(secondViewController, animated: true)
