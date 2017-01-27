@@ -17,37 +17,37 @@ class StripsViewController: UIViewController, STPPaymentCardTextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        paymentTextField = STPPaymentCardTextField(frame: CGRectMake(15, 30, CGRectGetWidth(view.frame) - 30, 44))
+        paymentTextField = STPPaymentCardTextField(frame: CGRect(x: 15, y: 30, width: (view.frame).width - 30, height: 44))
         paymentTextField.delegate = self
         view.addSubview(paymentTextField)
-        submitButton = UIButton(type: UIButtonType.System)
-        submitButton.frame = CGRectMake(15, 100, 100, 44)
-        submitButton.enabled = false
-        submitButton.setTitle("Submit", forState: UIControlState.Normal)
-        submitButton.addTarget(self, action: #selector(self.submitCard(_ :)), forControlEvents: UIControlEvents.TouchUpInside)
+        submitButton = UIButton(type: UIButtonType.system)
+        submitButton.frame = CGRect(x: 15, y: 100, width: 100, height: 44)
+        submitButton.isEnabled = false
+        submitButton.setTitle("Submit", for: UIControlState())
+        submitButton.addTarget(self, action: #selector(self.submitCard(_ :)), for: UIControlEvents.touchUpInside)
         view.addSubview(submitButton)
 
     }
 
-    func paymentCardTextFieldDidChange(textField: STPPaymentCardTextField) {
-        submitButton.enabled = textField.valid
+    func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
+        submitButton.isEnabled = textField.valid
     }
     
-    @IBAction func submitCard(sender: AnyObject?) {
+    @IBAction func submitCard(_ sender: AnyObject?) {
         // If you have your own form for getting credit card information, you can construct
         // your own STPCardParams from number, month, year, and CVV.
         let card = paymentTextField.card!
         
-        STPAPIClient.sharedClient().createTokenWithCard(card) { token, error in
+        STPAPIClient.shared().createToken(withCard: card) { token, error in
             guard let stripeToken = token else {
                 NSLog("Error creating token: %@", error!.localizedDescription);
                 return
             }
             
             // TODO: send the token to your server so it can create a charge
-            let alert = UIAlertController(title: "Welcome to Stripe", message: "Token created: \(stripeToken)", preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            let alert = UIAlertController(title: "Welcome to Stripe", message: "Token created: \(stripeToken)", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 

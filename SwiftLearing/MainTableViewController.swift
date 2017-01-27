@@ -35,7 +35,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if tableView == self.searchDisplayController!.searchResultsTableView {
             return self.filteredArray.count
@@ -44,9 +44,9 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = self.Tableview.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        let cell = self.Tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
       
         if tableView == self.searchDisplayController!.searchResultsTableView {
             countryName = filteredArray[indexPath.row]
@@ -59,39 +59,37 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let indexPath = tableView.indexPathForSelectedRow!
-        let currentCell = tableView.cellForRowAtIndexPath(indexPath)! as UITableViewCell
+        let currentCell = tableView.cellForRow(at: indexPath)! as UITableViewCell
         print(currentCell.textLabel!.text)
         
-        let item = tableView.cellForRowAtIndexPath(indexPath)!.textLabel!.text!
+        let item = tableView.cellForRow(at: indexPath)!.textLabel!.text!
         
         switch item
         {
         case "1.Get local Json values":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("JsonView") as! ViewController
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "JsonView") as! ViewController
             InGlobalFile.UserDefaultFunction(defaultName: "JsonView", defaultKey: "TUTORIAL_ID") .NSStringForKey()
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "2.Get Web Site HTML Source":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebPageSource") as! getWebPageSource
             InGlobalFile.UserDefaultFunction(defaultName: "WebPageSource", defaultKey: "TUTORIAL_ID") .NSStringForKey()
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "3.Local notification":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "LocalNotification") as! LocalNotificationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "4.Location base activity in Map":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("location") as! LocationViewController
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "location") as! LocationViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "5.Push Notification Function":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PushNotification") as! PushNotificationVC
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "PushNotification") as! PushNotificationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "6.Text Field Passcode":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("Passcode") as! PasscodeTextFieldVC
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Passcode") as! PasscodeTextFieldVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-        case "7.Stripe Integration":
-            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("StripeIntagrationVC") as! StripeIntagrationVC
-            self.navigationController?.pushViewController(secondViewController, animated: true)
+           
 //        case 7:
 //            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
 //            self.navigationController?.pushViewController(secondViewController, animated: true)
@@ -113,20 +111,20 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     // *************************** Search Datasource and Deligate methods ************************************ // 
     
-    func filterTableViewForEnterText(searchText: String)
+    func filterTableViewForEnterText(_ searchText: String)
     {
         let searchPredicate = NSPredicate(format: "SELF CONTAINS[c] %@", searchText)
-        let array = (self.IndexArray as NSArray).filteredArrayUsingPredicate(searchPredicate)
+        let array = (self.IndexArray as NSArray).filtered(using: searchPredicate)
         self.filteredArray = array as! [String]
         self.Tableview.reloadData()
     }
     
-    func searchDisplayController(controller: UISearchDisplayController, shouldReloadTableForSearchString searchString: String?) -> Bool {
+    func searchDisplayController(_ controller: UISearchDisplayController, shouldReloadTableForSearch searchString: String?) -> Bool {
         self.filterTableViewForEnterText(searchString!)
         return true
     }
     
-    func searchDisplayController(controller: UISearchDisplayController,
+    func searchDisplayController(_ controller: UISearchDisplayController,
                                  shouldReloadTableForSearchScope searchOption: Int) -> Bool {
         self.filterTableViewForEnterText(self.searchDisplayController!.searchBar.text!)
         return true

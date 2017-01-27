@@ -17,7 +17,7 @@ class InGlobalFile: NSObject {
         
         func NSStringForKey()
         {
-            NSUserDefaults.standardUserDefaults().setObject(defaultName, forKey: defaultKey)
+            UserDefaults.standard.set(defaultName, forKey: defaultKey)
             //  InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()  // include this
         }
     }
@@ -33,7 +33,7 @@ class InGlobalFile: NSObject {
             let alert = UIAlertView()
             alert.title = Title
             alert.message = Message
-            alert.addButtonWithTitle(btnTitle)
+            alert.addButton(withTitle: btnTitle)
             alert.show()
         }
     }

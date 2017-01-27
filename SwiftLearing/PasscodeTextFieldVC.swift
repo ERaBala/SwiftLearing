@@ -41,41 +41,41 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
         textFieldOne.layer.borderWidth = 1
         textFieldOne.layer.cornerRadius = 5
         textFieldOne.layer.masksToBounds = true
-        textFieldOne.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).CGColor
+        textFieldOne.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).cgColor
 //        textFieldOne.userInteractionEnabled = false
        
         
         textFieldTwo.layer.borderWidth = 1
         textFieldTwo.layer.cornerRadius = 5
         textFieldTwo.layer.masksToBounds = true
-        textFieldTwo.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).CGColor
+        textFieldTwo.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).cgColor
 //        textFieldTwo.userInteractionEnabled = false
 
         textFieldThree.layer.borderWidth = 1
         textFieldThree.layer.cornerRadius = 5
         textFieldThree.layer.masksToBounds = true
-        textFieldThree.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).CGColor
+        textFieldThree.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).cgColor
 //        textFieldThree.userInteractionEnabled = false
 
         
         textFieldFour.layer.borderWidth = 1
         textFieldFour.layer.cornerRadius = 5
         textFieldFour.layer.masksToBounds = true
-        textFieldFour.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).CGColor
+        textFieldFour.layer.borderColor = UIColor(red: 0.94, green: 0.58, blue: 0.20, alpha: 1).cgColor
 //        textFieldFour.userInteractionEnabled = false
         
-        textFieldFour.keyboardType = UIKeyboardType.NumberPad
+        textFieldFour.keyboardType = UIKeyboardType.numberPad
         
-        textFieldOne.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
-        textFieldTwo.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
-        textFieldThree.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
-        textFieldFour.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), forControlEvents: UIControlEvents.EditingChanged)
+        textFieldOne.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), for: UIControlEvents.editingChanged)
+        textFieldTwo.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), for: UIControlEvents.editingChanged)
+        textFieldThree.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), for: UIControlEvents.editingChanged)
+        textFieldFour.addTarget(self, action: #selector(PasscodeTextFieldVC.textFieldDidChange(_:)), for: UIControlEvents.editingChanged)
     
     }
 
  
     
-    func textFieldDidChange(textField: UITextField){
+    func textFieldDidChange(_ textField: UITextField){
         
         let text = textField.text
       
@@ -108,7 +108,7 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
             }
     }
     
-    func textFieldDidBeginEditing(textField: UITextField) {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
  
         if (textFieldOne.text == "" || textFieldTwo.text ==  "" || textFieldThree.text == "" || textFieldFour.text == "")
         {
@@ -127,7 +127,7 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
     /*
      * Called when 'return' key pressed. return NO to ignore.
      */
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
@@ -135,7 +135,7 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
     /*
      * Called when the user click on the view (outside the UITextField).
      */
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     

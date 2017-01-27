@@ -23,15 +23,15 @@ class LocalNotificationVC: UIViewController {
     }
     
 
-    @IBAction func LocalNotificationActionbutton(sender: AnyObject) {
+    @IBAction func LocalNotificationActionbutton(_ sender: AnyObject) {
 //        if NotificationTextField.text == ""
 //        {
             let localNotification = UILocalNotification()
-            localNotification.fireDate = NSDate(timeIntervalSinceNow: 5)
+            localNotification.fireDate = Date(timeIntervalSinceNow: 5)
             localNotification.alertBody = self.NotificationTextField.text
-            localNotification.timeZone = NSTimeZone.defaultTimeZone()
-            localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
-            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+            localNotification.timeZone = TimeZone.current
+            localNotification.applicationIconBadgeNumber = UIApplication.shared.applicationIconBadgeNumber + 1
+            UIApplication.shared.scheduleLocalNotification(localNotification)
 //        }
     }
 

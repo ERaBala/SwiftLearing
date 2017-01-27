@@ -11,21 +11,17 @@
 		CE20E5621D643F5700E5F65F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7589C01D41E48900DE27D4 /* EventKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */; };
 		CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */; };
-		CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5535011D5A03BE005422B3 /* libStripe.a */; };
 		CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E10FD1CF575FD00986566 /* getWebPageSource.swift */; };
 		CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071951D3F454400A1904C /* MainTableViewController.swift */; };
 		CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6071971D3F734500A1904C /* LocalNotificationVC.swift */; };
 		CE611F861D589BDB00DF5476 /* Tutorial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE611F851D589BDB00DF5476 /* Tutorial.storyboard */; };
-		CE71897D1D58A95E00D1F397 /* StripeIntagrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */; };
 		CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */; };
 		CE7589C41D4238BB00DE27D4 /* PushNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */; };
 		CE7F14621D40D4A90074825C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F14611D40D4A90074825C /* LocationViewController.swift */; };
 		CE86B1161D6ADE8100323A44 /* Fabric.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE86B1151D6ADE8100323A44 /* Fabric.storyboard */; };
-		CE86B1181D6ADEF200323A44 /* StripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86B1171D6ADEF200323A44 /* StripsViewController.swift */; };
 		CE9E500C1D5338FC006E290A /* Tutorial.json in Resources */ = {isa = PBXBuildFile; fileRef = CE9E500B1D5338FC006E290A /* Tutorial.json */; };
 		CEA05DDE1D4749CB007AABD8 /* PasscodeTextFieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */; };
 		CEA870621D6B1B15000043EC /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA870611D6B1B15000043EC /* PassKit.framework */; };
-		CEA870671D6B2A14000043EC /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA870631D6B2951000043EC /* Stripe.framework */; };
 		CEAC0C1F1CF42AD000B0B1A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC0C1E1CF42AD000B0B1A0 /* AppDelegate.swift */; };
 		CEAC0C211CF42AD000B0B1A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAC0C201CF42AD000B0B1A0 /* ViewController.swift */; };
 		CEAC0C241CF42AD000B0B1A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC0C221CF42AD000B0B1A0 /* Main.storyboard */; };
@@ -47,13 +43,11 @@
 		CE6071951D3F454400A1904C /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		CE6071971D3F734500A1904C /* LocalNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalNotificationVC.swift; path = LocalNotification/LocalNotificationVC.swift; sourceTree = "<group>"; };
 		CE611F851D589BDB00DF5476 /* Tutorial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Tutorial.storyboard; path = StoryBoard/Tutorial.storyboard; sourceTree = "<group>"; };
-		CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeIntagrationVC.swift; sourceTree = "<group>"; };
 		CE7189811D58B45600D1F397 /* TutorialTabelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialTabelVC.swift; path = tutorial/TutorialTabelVC.swift; sourceTree = "<group>"; };
 		CE7589C01D41E48900DE27D4 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationVC.swift; sourceTree = "<group>"; };
 		CE7F14611D40D4A90074825C /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocationViewController.swift; path = location/LocationViewController.swift; sourceTree = "<group>"; };
 		CE86B1151D6ADE8100323A44 /* Fabric.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fabric.storyboard; path = SwiftLearing/Fabric/Fabric.storyboard; sourceTree = "<group>"; };
-		CE86B1171D6ADEF200323A44 /* StripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripsViewController.swift; path = SwiftLearing/Fabric/StripsViewController.swift; sourceTree = "<group>"; };
 		CE9E500B1D5338FC006E290A /* Tutorial.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Tutorial.json; path = tutorial/Tutorial.json; sourceTree = "<group>"; };
 		CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasscodeTextFieldVC.swift; sourceTree = "<group>"; };
 		CEA870611D6B1B15000043EC /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
@@ -73,10 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA870671D6B2A14000043EC /* Stripe.framework in Frameworks */,
 				CEA870621D6B1B15000043EC /* PassKit.framework in Frameworks */,
 				CE20E5621D643F5700E5F65F /* EventKit.framework in Frameworks */,
-				CE5535021D5A03BE005422B3 /* libStripe.a in Frameworks */,
 				983BE3E08F79845BD1C80F30 /* Pods_SwiftLearing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				CE86B1151D6ADE8100323A44 /* Fabric.storyboard */,
-				CE86B1171D6ADEF200323A44 /* StripsViewController.swift */,
 			);
 			name = Fabric;
 			sourceTree = "<group>";
@@ -191,7 +182,6 @@
 				CE7F14611D40D4A90074825C /* LocationViewController.swift */,
 				CE7589C31D4238BB00DE27D4 /* PushNotificationVC.swift */,
 				CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */,
-				CE71897C1D58A95E00D1F397 /* StripeIntagrationVC.swift */,
 			);
 			path = SwiftLearing;
 			sourceTree = "<group>";
@@ -203,13 +193,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEAC0C2D1CF42AD000B0B1A0 /* Build configuration list for PBXNativeTarget "SwiftLearing" */;
 			buildPhases = (
-				469CD4BED97C7A7692146398 /* 📦 Check Pods Manifest.lock */,
+				469CD4BED97C7A7692146398 /* [CP] Check Pods Manifest.lock */,
 				CEAC0C171CF42ACF00B0B1A0 /* Sources */,
 				CEAC0C181CF42ACF00B0B1A0 /* Frameworks */,
 				CEAC0C191CF42ACF00B0B1A0 /* Resources */,
 				CEAE39921D4F58E8000494CB /* Run Script */,
-				0B12C6AD2897BE0506DAD30B /* 📦 Embed Pods Frameworks */,
-				51A8B97674C4D828AD0CF940 /* 📦 Copy Pods Resources */,
+				0B12C6AD2897BE0506DAD30B /* [CP] Embed Pods Frameworks */,
+				51A8B97674C4D828AD0CF940 /* [CP] Copy Pods Resources */,
 				CE86B1191D6AE25600323A44 /* ShellScript */,
 			);
 			buildRules = (
@@ -234,6 +224,7 @@
 					CEAC0C1A1CF42ACF00B0B1A0 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ESS76MX5U7;
+						LastSwiftMigration = 0810;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -290,14 +281,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B12C6AD2897BE0506DAD30B /* 📦 Embed Pods Frameworks */ = {
+		0B12C6AD2897BE0506DAD30B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,29 +296,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftLearing/Pods-SwiftLearing-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		469CD4BED97C7A7692146398 /* 📦 Check Pods Manifest.lock */ = {
+		469CD4BED97C7A7692146398 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		51A8B97674C4D828AD0CF940 /* 📦 Copy Pods Resources */ = {
+		51A8B97674C4D828AD0CF940 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,12 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE86B1181D6ADEF200323A44 /* StripsViewController.swift in Sources */,
 				CEA05DDE1D4749CB007AABD8 /* PasscodeTextFieldVC.swift in Sources */,
 				CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */,
 				CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */,
 				CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */,
-				CE71897D1D58A95E00D1F397 /* StripeIntagrationVC.swift in Sources */,
 				CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */,
 				CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */,
 				CE7F14621D40D4A90074825C /* LocationViewController.swift in Sources */,
@@ -504,17 +493,15 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftLearing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Release-iphoneos/Stripe",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibtest.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearing/SwiftLearing-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -529,16 +516,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SwiftLearing/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Release-iphoneos/Stripe",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibtest.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftLearing/SwiftLearing-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

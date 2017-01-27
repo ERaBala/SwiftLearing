@@ -44,7 +44,7 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate,MKMapVi
 
     
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         //println("didUpdateToLocation %@",locations)
         
         let currentLocation : CLLocation = locations[0] as CLLocation
@@ -82,7 +82,7 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate,MKMapVi
         })
     }
     
-    func displayLocationInfo(placemark: CLPlacemark) {
+    func displayLocationInfo(_ placemark: CLPlacemark) {
         
             
 /*            var tempString : String = ""
@@ -112,23 +112,23 @@ class LocationViewController: UIViewController,CLLocationManagerDelegate,MKMapVi
 
     }
     
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error while updating location " + error.localizedDescription)
     }
 }
 
 
-    private func addAnnotation(coordinate coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
+    private func addAnnotation(coordinate: CLLocationCoordinate2D, title: String, subtitle: String) {
        
         
     }
 
-    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+    func mapView(_ mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation { return nil }
         
         let identifier = "CustomAnnotation"
         
-        var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
         
         if annotationView == nil {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)

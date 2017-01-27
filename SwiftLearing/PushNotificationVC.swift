@@ -16,7 +16,7 @@ class PushNotificationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         let DEVICE_TOKEN =  NSUserDefaults.standardUserDefaults().stringForKey(userKeyConstant)
+         let DEVICE_TOKEN =  UserDefaults.standard.string(forKey: userKeyConstant)
          print(DEVICE_TOKEN)
         self.deviceToken.text = DEVICE_TOKEN
  
@@ -27,7 +27,7 @@ class PushNotificationVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func TutorialWebSite(sender: AnyObject) {
+    @IBAction func TutorialWebSite(_ sender: AnyObject) {
         
         
         

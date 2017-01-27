@@ -27,8 +27,8 @@ class ViewController: UIViewController {
 
 
     func getJSONForUI(){
-        let fileUrl: NSURL = NSBundle.mainBundle().URLForResource("Registration", withExtension: "json")!
-        let jsonData: NSData = NSData(contentsOfURL: fileUrl)!
+        let fileUrl: URL = Bundle.main.url(forResource: "Registration", withExtension: "json")!
+        let jsonData: Data = try! Data(contentsOf: fileUrl)
         
         /*      ERROR Message and array value of arrRegistration
         let jsonError: NSError?
@@ -36,11 +36,11 @@ class ViewController: UIViewController {
         print("ARRAY******\(arr)")
          */
         
-        let json = (try! NSJSONSerialization.JSONObjectWithData(jsonData, options: .AllowFragments))
+        let json = (try! JSONSerialization.jsonObject(with: jsonData, options: .allowFragments))
         self.arrRegistration = json as! Array
 //        print("\(self.arrRegistration)")
         
-        self.JsonTextview.text = String(arrRegistration)  //<-- dict convert in to string
+        self.JsonTextview.text = String(describing: arrRegistration)  //<-- dict convert in to string
         
     }
     

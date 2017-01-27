@@ -5,7 +5,6 @@
 #ifndef Donate_Donate_Bridging_Header_h
 #define Donate_Donate_Bridging_Header_h
 
-#import <Stripe/Stripe.h>
 #import <AFNetworking/AFNetworking.h>
 
 #endif

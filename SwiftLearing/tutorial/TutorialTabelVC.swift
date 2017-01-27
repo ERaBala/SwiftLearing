@@ -13,7 +13,7 @@ class TutorialTabelVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let DEVICE_TOKEN =  NSUserDefaults.standardUserDefaults().stringForKey("TUTORIAL_ID")
+        let DEVICE_TOKEN =  UserDefaults.standard.string(forKey: "TUTORIAL_ID")
         print(DEVICE_TOKEN)
         
     }
@@ -24,8 +24,8 @@ class TutorialTabelVC: UIViewController {
     }
     
 
-    @IBAction func DoneButton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func DoneButton(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
