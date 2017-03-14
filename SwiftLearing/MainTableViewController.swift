@@ -63,7 +63,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         
         let indexPath = tableView.indexPathForSelectedRow!
         let currentCell = tableView.cellForRow(at: indexPath)! as UITableViewCell
-        print(currentCell.textLabel!.text)
+        print(currentCell.textLabel!.text!)
         
         let item = tableView.cellForRow(at: indexPath)!.textLabel!.text!
         
@@ -130,5 +130,9 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         return true
     }
     
+    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    {
+        return true;
+    }
 
 }

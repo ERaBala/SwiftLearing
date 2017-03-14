@@ -66,7 +66,9 @@
 		</dict>
 	</dict>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string></string>
+	<string>This Location take as a default Location ..</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Do You want to get the Location ?</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>
 	<key>UIBackgroundModes</key>
