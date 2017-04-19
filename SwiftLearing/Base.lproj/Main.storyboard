@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsn-WE-yUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2092" y="334"/>
+            <point key="canvasLocation" x="-670" y="-462"/>
         </scene>
         <!--Index-->
         <scene sceneID="yP3-bu-gFY">
@@ -94,7 +94,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-1205" y="335"/>
+            <point key="canvasLocation" x="153" y="-462"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Ed-kC-oHH">
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6X-dq-UG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-911.20000000000005" y="985.45727136431788"/>
+            <point key="canvasLocation" x="-961" y="985"/>
         </scene>
         <!--Get Web Page Source-->
         <scene sceneID="tne-QT-ifu">
@@ -239,8 +239,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk4-n2-RtU">
-                                <rect key="frame" x="230" y="550" width="140" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk4-n2-RtU">
+                                <rect key="frame" x="117.5" y="617" width="140" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="3Ks-7C-Wce"/>
                                 </constraints>
@@ -250,8 +250,8 @@
                                     <segue destination="5ng-PC-uLn" kind="show" id="ioO-bD-tjZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Wj-1hQ">
-                                <rect key="frame" x="20" y="126" width="560" height="70"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJF-Wj-1hQ">
+                                <rect key="frame" x="16" y="126" width="343" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="KrL-ke-oU9"/>
                                 </constraints>
@@ -259,8 +259,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Device Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frm-4O-P1r">
-                                <rect key="frame" x="246" y="97" width="108" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frm-4O-P1r">
+                                <rect key="frame" x="133.5" y="97" width="108" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -283,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKO-yT-vJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66" y="1645"/>
+            <point key="canvasLocation" x="276" y="1645"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="xiF-MM-hMO">
@@ -305,20 +305,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c46-Co-2ah">
-                                <rect key="frame" x="241" y="285" width="119" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c46-Co-2ah">
+                                <rect key="frame" x="128" y="318.5" width="119" height="30"/>
                                 <state key="normal" title="Send Notification"/>
                                 <connections>
                                     <action selector="LocalNotificationActionbutton:" destination="Fhf-kW-Qlp" eventType="touchUpInside" id="l45-i9-r6n"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-Oh-AYf">
-                                <rect key="frame" x="40" y="247" width="521" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JjQ-Oh-AYf">
+                                <rect key="frame" x="36" y="280.5" width="303" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Close the Application to get notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyA-ga-jiz">
-                                <rect key="frame" x="172" y="537" width="256" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Close the Application to get notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JyA-ga-jiz">
+                                <rect key="frame" x="59.5" y="604" width="256" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="256" id="neM-Bc-rzB"/>
                                 </constraints>
@@ -326,8 +326,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRD-PD-4aX">
-                                <rect key="frame" x="230" y="562" width="140" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRD-PD-4aX">
+                                <rect key="frame" x="117.5" y="629" width="140" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="JgE-0u-twL"/>
                                 </constraints>
@@ -336,8 +336,8 @@
                                     <segue destination="5ng-PC-uLn" kind="show" id="2Vz-XO-IqO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NOTE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Son-lh-qxL">
-                                <rect key="frame" x="275" y="508" width="50" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOTE:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Son-lh-qxL">
+                                <rect key="frame" x="162.5" y="575" width="50" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="fhW-t4-cRe"/>
                                 </constraints>
@@ -381,12 +381,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pde-yx-Aax">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pde-yx-Aax">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ab0-EN-lP2">
-                                <rect key="frame" x="179" y="211" width="242" height="66"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab0-EN-lP2">
+                                <rect key="frame" x="66.5" y="244.5" width="242" height="66"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZI-wm-93W">
                                         <rect key="frame" x="9" y="8" width="50" height="50"/>
@@ -463,8 +463,8 @@
                                     <constraint firstItem="7nf-ae-xnQ" firstAttribute="baseline" secondItem="L3U-Qc-bv5" secondAttribute="baseline" id="x5a-oJ-T6w"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-zS-RGa">
-                                <rect key="frame" x="230" y="548" width="141" height="32"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-zS-RGa">
+                                <rect key="frame" x="117" y="615" width="141" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Yry-SB-xBU"/>
                                     <constraint firstAttribute="width" constant="141" id="d4o-Kk-TgS"/>
@@ -541,7 +541,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibO-RW-P91" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95.200000000000003" y="1043.9280359820091"/>
+            <point key="canvasLocation" x="-230" y="985"/>
         </scene>
         <!--Stripe IntagrationVC-->
         <scene sceneID="wvY-mD-4ur">
@@ -555,33 +555,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imc-Aa-bIi" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="145" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Card Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="imc-Aa-bIi" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                                <rect key="frame" x="16" y="145" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expire Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-AV-h1a" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="183" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expire Date" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5L-AV-h1a" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                                <rect key="frame" x="16" y="183" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KqV-v8-C7Y" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="221" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KqV-v8-C7Y" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                                <rect key="frame" x="16" y="221" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-So-O7v" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="107" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-So-O7v" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                                <rect key="frame" x="16" y="107" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezm-s4-9LI" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
-                                <rect key="frame" x="20" y="259" width="560" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ezm-s4-9LI" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                                <rect key="frame" x="16" y="259" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYB-4D-ift">
-                                <rect key="frame" x="255" y="318" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYB-4D-ift">
+                                <rect key="frame" x="142" y="318" width="91" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="91" id="Ijk-EE-H2M"/>
                                 </constraints>
@@ -622,10 +622,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ylw-ME-vpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="676" y="977"/>
+            <point key="canvasLocation" x="474" y="985"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wjA-HF-2vO"/>
+        <segue reference="cDM-DY-eGb"/>
     </inferredMetricsTieBreakers>
 </document>

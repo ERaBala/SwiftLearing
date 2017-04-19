@@ -20,6 +20,4 @@ class TxtFieldGloabClass: UITextField {
         self.tintColor = UIColor.purple
         
     }
-    
-    
 }

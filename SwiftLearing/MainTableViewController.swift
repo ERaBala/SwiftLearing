@@ -71,11 +71,11 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         {
         case "1.Get local Json values":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "JsonView") as! ViewController
-            InGlobalFile.UserDefaultFunction(defaultName: "JsonView", defaultKey: "TUTORIAL_ID") .NSStringForKey()
+            UserDefaultFunction(defaultName: "JsonView", defaultKey: "TUTORIAL_ID") .NSStringForKey()
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "2.Get Web Site HTML Source":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebPageSource") as! getWebPageSource
-            InGlobalFile.UserDefaultFunction(defaultName: "WebPageSource", defaultKey: "TUTORIAL_ID") .NSStringForKey()
+            UserDefaultFunction(defaultName: "WebPageSource", defaultKey: "TUTORIAL_ID") .NSStringForKey()
             self.navigationController?.pushViewController(secondViewController, animated: true)
         case "3.Local notification":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "LocalNotification") as! LocalNotificationVC

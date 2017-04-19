@@ -10,17 +10,7 @@ import UIKit
 
 class InGlobalFile: NSObject {
     
-    struct  UserDefaultFunction {
-        
-        var defaultName: String
-        var defaultKey: String
-        
-        func NSStringForKey()
-        {
-            UserDefaults.standard.set(defaultName, forKey: defaultKey)
-            //  InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()  // include this
-        }
-    }
+    
     
     struct Aleart {
         
@@ -38,4 +28,16 @@ class InGlobalFile: NSObject {
         }
     }
 
+}
+
+struct  UserDefaultFunction {
+    
+    var defaultName: String
+    var defaultKey: String
+    
+    func NSStringForKey()
+    {
+        UserDefaults.standard.set(defaultName, forKey: defaultKey)
+        //  InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()  // include this
+    }
 }
