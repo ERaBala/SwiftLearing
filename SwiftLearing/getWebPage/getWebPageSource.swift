@@ -60,7 +60,7 @@ class getWebPageSource: UIViewController {
         
         let myURLString = self.URLField?.text
         guard let myURL = URL(string: myURLString!) else {
-            print("Error: \(myURLString) doesn't seem to be a valid URL")
+            print("Error: \(String(describing: myURLString)) doesn't seem to be a valid URL")
             return
         }
         

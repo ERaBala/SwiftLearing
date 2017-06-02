@@ -12,22 +12,7 @@ class InGlobalFile: NSObject {
     
     
     
-    struct Aleart {
-        
-        var Title: String
-        var Message: String
-        var btnTitle: String
-        
-        func ShowAleartFunction()
-        {
-            let alert = UIAlertView()
-            alert.title = Title
-            alert.message = Message
-            alert.addButton(withTitle: btnTitle)
-            alert.show()
-        }
-    }
-
+    
 }
 
 struct  UserDefaultFunction {

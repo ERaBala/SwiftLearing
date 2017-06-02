@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aqb-lN-UxQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aqb-lN-UxQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rsn-WE-yUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-670" y="-462"/>
+            <point key="canvasLocation" x="-6183" y="54"/>
         </scene>
         <!--Index-->
         <scene sceneID="yP3-bu-gFY">
@@ -53,7 +53,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ltn-1N-qD0" id="G1B-ry-yFe">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -94,7 +94,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="153" y="-462"/>
+            <point key="canvasLocation" x="-5359" y="54"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Ed-kC-oHH">
@@ -158,7 +158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6X-dq-UG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-961" y="985"/>
+            <point key="canvasLocation" x="-3161" y="-99"/>
         </scene>
         <!--Get Web Page Source-->
         <scene sceneID="tne-QT-ifu">
@@ -225,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1329" y="1645"/>
+            <point key="canvasLocation" x="-2409" y="-99"/>
         </scene>
         <!--Push NotificationVC-->
         <scene sceneID="oY5-Ct-yPB">
@@ -283,7 +283,51 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKO-yT-vJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="276" y="1645"/>
+            <point key="canvasLocation" x="-241" y="-107"/>
+        </scene>
+        <!--Tabel View-->
+        <scene sceneID="ckp-Kx-Rr7">
+            <objects>
+                <viewController storyboardIdentifier="MVVM" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gRm-JT-3rx" customClass="MVVMTabelView" customModule="SwiftLearing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LGi-rA-Vga"/>
+                        <viewControllerLayoutGuide type="bottom" id="fVm-Jl-zkm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zA8-Se-TBc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vme-1L-0Hp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="lMz-a7-55d">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lMz-a7-55d" id="Gcj-HA-ix4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gRm-JT-3rx" id="rLv-AC-BZk"/>
+                                    <outlet property="delegate" destination="gRm-JT-3rx" id="Rfb-nP-Ilp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fVm-Jl-zkm" firstAttribute="top" secondItem="Vme-1L-0Hp" secondAttribute="bottom" id="B2h-HS-puJ"/>
+                            <constraint firstItem="Vme-1L-0Hp" firstAttribute="top" secondItem="zA8-Se-TBc" secondAttribute="top" id="unW-DG-mZj"/>
+                            <constraint firstAttribute="trailing" secondItem="Vme-1L-0Hp" secondAttribute="trailing" id="wPM-Sy-nYm"/>
+                            <constraint firstItem="Vme-1L-0Hp" firstAttribute="leading" secondItem="zA8-Se-TBc" secondAttribute="leading" id="xbP-Lq-Gtx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qaq-Cp-pky" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1452" y="906"/>
         </scene>
         <!--Tutorial-->
         <scene sceneID="xiF-MM-hMO">
@@ -367,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zu7-3M-zz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-557" y="330"/>
+            <point key="canvasLocation" x="-1690" y="-105"/>
         </scene>
         <!--Passcode Text FieldVC-->
         <scene sceneID="Gru-Ks-3pG">
@@ -388,21 +432,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ab0-EN-lP2">
                                 <rect key="frame" x="66.5" y="244.5" width="242" height="66"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZI-wm-93W">
-                                        <rect key="frame" x="9" y="8" width="50" height="50"/>
-                                        <color key="tintColor" red="0.93725490199999995" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="0vh-bR-Uvj"/>
-                                            <constraint firstAttribute="width" constant="50" id="PeV-dD-i0N"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.93725490199999995" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="5Vo-B3-c6g"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3U-Qc-bv5">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3U-Qc-bv5" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
                                         <rect key="frame" x="125" y="8" width="50" height="50"/>
                                         <color key="tintColor" red="0.93725490199999995" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -413,10 +443,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
                                         <connections>
-                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="LVq-vY-6lb"/>
+                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="LSG-VS-kuG"/>
+                                            <outlet property="nextTextField" destination="ZkZ-t0-HeF" id="Cuy-6Y-lQM"/>
+                                            <outlet property="previousTextField" destination="7nf-ae-xnQ" id="z1T-Zo-mz8"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZkZ-t0-HeF">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZkZ-t0-HeF" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
                                         <rect key="frame" x="183" y="8" width="50" height="50"/>
                                         <color key="tintColor" red="0.93725490199999995" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -426,10 +458,11 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
                                         <connections>
-                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="Who-yk-nwy"/>
+                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="G8k-Aj-H42"/>
+                                            <outlet property="previousTextField" destination="L3U-Qc-bv5" id="om4-2E-G1j"/>
                                         </connections>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nf-ae-xnQ">
+                                    <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7nf-ae-xnQ" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
                                         <rect key="frame" x="67" y="8" width="50" height="50"/>
                                         <color key="tintColor" red="0.93725490199999995" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -440,7 +473,24 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
                                         <connections>
-                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="f1T-CZ-Bcf"/>
+                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="vrQ-OG-ByO"/>
+                                            <outlet property="nextTextField" destination="L3U-Qc-bv5" id="nU3-qO-b3U"/>
+                                            <outlet property="previousTextField" destination="fZI-wm-93W" id="Jsy-nf-C6g"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fZI-wm-93W" customClass="TxtFieldGloabClass" customModule="SwiftLearing" customModuleProvider="target">
+                                        <rect key="frame" x="9" y="8" width="50" height="50"/>
+                                        <color key="tintColor" red="0.93725490199999995" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0vh-bR-Uvj"/>
+                                            <constraint firstAttribute="width" constant="50" id="PeV-dD-i0N"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.93725490199999995" green="0.63137254899999995" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Qik-Jt-g9s" id="2mO-o7-MEC"/>
+                                            <outlet property="nextTextField" destination="7nf-ae-xnQ" id="OTQ-vC-m1Z"/>
                                         </connections>
                                     </textField>
                                 </subviews>
@@ -486,15 +536,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textFieldFour" destination="ZkZ-t0-HeF" id="gfP-Oy-FVk"/>
-                        <outlet property="textFieldOne" destination="fZI-wm-93W" id="Pc8-hi-Dcl"/>
-                        <outlet property="textFieldThree" destination="L3U-Qc-bv5" id="8Cl-xu-oTa"/>
-                        <outlet property="textFieldTwo" destination="7nf-ae-xnQ" id="Sop-t1-L7I"/>
+                        <outlet property="textFieldFour" destination="ZkZ-t0-HeF" id="whh-tN-ICo"/>
+                        <outlet property="textFieldOne" destination="fZI-wm-93W" id="d4W-YF-Y4J"/>
+                        <outlet property="textFieldThree" destination="L3U-Qc-bv5" id="ldy-UL-SYg"/>
+                        <outlet property="textFieldTwo" destination="7nf-ae-xnQ" id="keo-tV-cUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ejy-KQ-hiU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="330"/>
+            <point key="canvasLocation" x="497" y="-107"/>
         </scene>
         <!--Location View Controller-->
         <scene sceneID="H2a-El-9Wc">
@@ -541,12 +591,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibO-RW-P91" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-230" y="985"/>
+            <point key="canvasLocation" x="-951" y="-106"/>
         </scene>
-        <!--Stripe IntagrationVC-->
+        <!--Strips View Controller-->
         <scene sceneID="wvY-mD-4ur">
             <objects>
-                <viewController storyboardIdentifier="StripeIntagrationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mZo-5P-xMH" customClass="StripeIntagrationVC" customModule="SwiftLearing" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StripsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mZo-5P-xMH" customClass="StripsViewController" customModule="SwiftLearing" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gsx-uK-R5W"/>
                         <viewControllerLayoutGuide type="bottom" id="mig-v9-M7B"/>
@@ -586,9 +636,6 @@
                                     <constraint firstAttribute="width" constant="91" id="Ijk-EE-H2M"/>
                                 </constraints>
                                 <state key="normal" title="SAVE"/>
-                                <connections>
-                                    <action selector="SaveBtn:" destination="mZo-5P-xMH" eventType="touchUpInside" id="ioH-mO-0Gn"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -612,20 +659,13 @@
                             <constraint firstItem="ezm-s4-9LI" firstAttribute="top" secondItem="KqV-v8-C7Y" secondAttribute="bottom" constant="8" symbolic="YES" id="z4q-rC-m6O"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="AmountTF" destination="ezm-s4-9LI" id="mCK-i2-g9t"/>
-                        <outlet property="CVCTF" destination="KqV-v8-C7Y" id="573-0D-ew0"/>
-                        <outlet property="CardNumberTF" destination="imc-Aa-bIi" id="FjF-vE-UIv"/>
-                        <outlet property="EmailTxtField" destination="8hH-So-O7v" id="GP9-1n-hx3"/>
-                        <outlet property="ExpireDateTF" destination="R5L-AV-h1a" id="G7h-ww-ABS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ylw-ME-vpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="474" y="985"/>
+            <point key="canvasLocation" x="722" y="907"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cDM-DY-eGb"/>
+        <segue reference="Co2-dh-D7j"/>
     </inferredMetricsTieBreakers>
 </document>

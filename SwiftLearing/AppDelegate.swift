@@ -8,12 +8,24 @@
 
 import UIKit
 import Fabric
+import Stripe
+import Crashlytics
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let EmpDetails : [ViewModel] = {
+        
+        let Bala = Model(Name : "Bala", Age: 23, Environment: "ios", ProfilePic: "http://auto.ferrari.com/en_EN/wp-content/uploads/sites/5/2013/07/Ferrari-F12berlinetta.jpg")
+        let tyzon = Model(Name : "Tyson", Age: 26, Environment: "ios", ProfilePic: "http://auto.ferrari.com/en_EN/wp-content/uploads/sites/5/2013/07/Ferrari-F12berlinetta.jpg")
+        let nas = Model(Name : "Nas", Age: 25, Environment: "Android", ProfilePic: "http://auto.ferrari.com/en_EN/wp-content/uploads/sites/5/2013/07/Ferrari-F12berlinetta.jpg")
+        let sesha = Model(Name : "Sesha", Age: 70, Environment: "PHP", ProfilePic: "http://auto.ferrari.com/en_EN/wp-content/uploads/sites/5/2013/07/Ferrari-F12berlinetta.jpg")
+        
+        return[ ViewModel(model : Bala),ViewModel(model : tyzon),ViewModel(model : nas),ViewModel(model : sesha)]
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -30,9 +42,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(settings)
         application.registerForRemoteNotifications()
         
-//        STPPaymentConfiguration.sharedConfiguration().publishableKey = "pk_test_4bQMrrawci1v0iZeTC0AR3wU"
-        // do any other necessary launch configuration
 
+
+        // TODO: Replace with your own test publishable key
+        // TODO: DEBUG ONLY! Remove / conditionalize before launch
+        Stripe.setDefaultPublishableKey("pk_test_6pRNASCoBOKtIshFeQd4XMUh")
+        Fabric.with([STPAPIClient.self, Crashlytics.self])
 
         return true
     }
@@ -60,7 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .replacingOccurrences( of: " ", with: "") as String
         
         print(deviceTokenString)
-        InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()
+//        InGlobalFile.UserDefaultFunction(defaultName: deviceTokenString, defaultKey: "DeviceToken") .NSStringForKey()
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

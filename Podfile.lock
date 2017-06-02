@@ -20,19 +20,26 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Alamofire (4.4.0)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
-  - Stripe (9.2.0)
+  - Stripe (10.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
+  - Alamofire
+  - Crashlytics
   - Fabric
   - Stripe
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  Stripe: a47770e82db059d0e7e160f9aabc2997055ee911
+  Stripe: 1c7aa951a075cced500a919d92b687b35d410705
 
-PODFILE CHECKSUM: f4da4cc7bb16f840767ffafb8243d9382967b1b1
+PODFILE CHECKSUM: 6d9cc5ad6d8351fb647c677a88c00034221a02fd
 
-COCOAPODS: 1.1.0.rc.3
+COCOAPODS: 1.2.0

@@ -14,7 +14,7 @@ class TutorialTabelVC: UIViewController {
         super.viewDidLoad()
         
         let DEVICE_TOKEN =  UserDefaults.standard.string(forKey: "TUTORIAL_ID")
-        print(DEVICE_TOKEN)
+        print(DEVICE_TOKEN ?? "There is no Device Token")
         
     }
 
@@ -22,24 +22,11 @@ class TutorialTabelVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     @IBAction func DoneButton(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
-
-
 
 /* ---------------------- Two Different StoryBoard ----------------------
  https://developer.apple.com/library/ios/recipes/xcode_help-IB_storyboard/Chapters/RefactorStoryboard.html

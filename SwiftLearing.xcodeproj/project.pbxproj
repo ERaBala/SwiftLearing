@@ -28,6 +28,11 @@
 		CEAC0C261CF42AD000B0B1A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEAC0C251CF42AD000B0B1A0 /* Assets.xcassets */; };
 		CEAC0C291CF42AD000B0B1A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEAC0C271CF42AD000B0B1A0 /* LaunchScreen.storyboard */; };
 		CEAC0C311CF42D7600B0B1A0 /* Registration.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAC0C301CF42D7600B0B1A0 /* Registration.json */; };
+		D4498B721ED311F70096FFB8 /* DefaultTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4498B711ED311F70096FFB8 /* DefaultTextField.swift */; };
+		D46BB7611EE1463800885620 /* StripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BB7601EE1463800885620 /* StripsViewController.swift */; };
+		D46BB7651EE165B900885620 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BB7641EE165B900885620 /* Model.swift */; };
+		D46BB7671EE1673E00885620 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BB7661EE1673E00885620 /* ViewModel.swift */; };
+		D46BB7691EE1780500885620 /* MVVMTabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BB7681EE1780500885620 /* MVVMTabelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +65,11 @@
 		CEAC0C281CF42AD000B0B1A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEAC0C2A1CF42AD000B0B1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEAC0C301CF42D7600B0B1A0 /* Registration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Registration.json; path = ../Registration.json; sourceTree = "<group>"; };
+		D4498B711ED311F70096FFB8 /* DefaultTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultTextField.swift; path = SwiftLearing/DefaultTextField.swift; sourceTree = "<group>"; };
+		D46BB7601EE1463800885620 /* StripsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StripsViewController.swift; path = SwiftLearing/Fabric/StripsViewController.swift; sourceTree = "<group>"; };
+		D46BB7641EE165B900885620 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = SwiftLearing/MVVM/Model.swift; sourceTree = "<group>"; };
+		D46BB7661EE1673E00885620 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = SwiftLearing/MVVM/ViewModel.swift; sourceTree = "<group>"; };
+		D46BB7681EE1780500885620 /* MVVMTabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMTabelView.swift; path = SwiftLearing/MVVM/MVVMTabelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 		CE86B1141D6ADE2900323A44 /* Fabric */ = {
 			isa = PBXGroup;
 			children = (
+				D46BB7601EE1463800885620 /* StripsViewController.swift */,
 				CE86B1151D6ADE8100323A44 /* Fabric.storyboard */,
 			);
 			name = Fabric;
@@ -132,6 +143,7 @@
 			children = (
 				CE5534F61D59B40D005422B3 /* TxtFieldGloabClass.swift */,
 				CE5123D21D49CDB500A61AA2 /* InGlobalFile.swift */,
+				D4498B711ED311F70096FFB8 /* DefaultTextField.swift */,
 			);
 			name = NSObjectClass;
 			sourceTree = "<group>";
@@ -152,9 +164,10 @@
 			children = (
 				CE5534FD1D59E7D8005422B3 /* AppDelegate */,
 				CE86B11A1D6AE8B200323A44 /* NSObjectClass */,
-				CE86B1141D6ADE2900323A44 /* Fabric */,
-				CE9E500A1D5338EA006E290A /* Tutorial */,
 				CEAC0C1D1CF42ACF00B0B1A0 /* SwiftLearing */,
+				CE86B1141D6ADE2900323A44 /* Fabric */,
+				D46BB75F1EE13B2D00885620 /* MVVM */,
+				CE9E500A1D5338EA006E290A /* Tutorial */,
 				CE5534FC1D59E481005422B3 /* SupportingFiles */,
 				CE7589C21D41E49200DE27D4 /* Frameworks */,
 				CEAC0C1C1CF42ACF00B0B1A0 /* Products */,
@@ -184,6 +197,16 @@
 				CEA05DDD1D4749CB007AABD8 /* PasscodeTextFieldVC.swift */,
 			);
 			path = SwiftLearing;
+			sourceTree = "<group>";
+		};
+		D46BB75F1EE13B2D00885620 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				D46BB7641EE165B900885620 /* Model.swift */,
+				D46BB7661EE1673E00885620 /* ViewModel.swift */,
+				D46BB7681EE1780500885620 /* MVVMTabelView.swift */,
+			);
+			name = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +241,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = user;
 				TargetAttributes = {
 					CEAC0C1A1CF42ACF00B0B1A0 = {
@@ -337,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 2e6ae4cae003b2bfffc43ed414ac41857cace231 5fdbd2ea1fb62f2300c4b5d3bfc0195c601f607df259d6347c8920a653f2c652";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 927a370500d587fddcfb7494ecb5a1b32288e3c0 f5ad1666342c46d9b5f998c71a586c2e443a7f2df0e1489428bba92204e98d91";
 		};
 		CEAE39921D4F58E8000494CB /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -360,13 +383,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D46BB7611EE1463800885620 /* StripsViewController.swift in Sources */,
 				CEA05DDE1D4749CB007AABD8 /* PasscodeTextFieldVC.swift in Sources */,
 				CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */,
 				CE6071961D3F454400A1904C /* MainTableViewController.swift in Sources */,
 				CE5123D31D49CDB500A61AA2 /* InGlobalFile.swift in Sources */,
 				CE5E10FF1CF575FD00986566 /* getWebPageSource.swift in Sources */,
 				CE5534F71D59B40D005422B3 /* TxtFieldGloabClass.swift in Sources */,
+				D46BB7691EE1780500885620 /* MVVMTabelView.swift in Sources */,
+				D46BB7651EE165B900885620 /* Model.swift in Sources */,
 				CE7F14621D40D4A90074825C /* LocationViewController.swift in Sources */,
+				D4498B721ED311F70096FFB8 /* DefaultTextField.swift in Sources */,
+				D46BB7671EE1673E00885620 /* ViewModel.swift in Sources */,
 				CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */,
 				CEAC0C211CF42AD000B0B1A0 /* ViewController.swift in Sources */,
 				CE7589C41D4238BB00DE27D4 /* PushNotificationVC.swift in Sources */,
@@ -410,8 +438,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -457,8 +487,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -479,6 +511,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

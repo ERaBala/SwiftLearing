@@ -12,14 +12,13 @@
                          "title":"We need to know your title and name",
                          "dropDownArray":[],
                          "isErrorShow": "No"
-                         }
+                        }
                          "step-3":{
                          "title":"We need to know your title and name",
                          "dropDownArray":[],
                          "isErrorShow": "No"
-                         }
- 
-				   }
+                        }
+ 				   }
 	},
 	{
 		"classType":"TitleTableViewCell",

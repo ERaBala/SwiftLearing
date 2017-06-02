@@ -23,12 +23,13 @@ extension NSAttributedString {
 }
 
 
-class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
+class PasscodeTextFieldVC: UIViewController {
      
     @IBOutlet weak var textFieldOne: UITextField!
     @IBOutlet weak var textFieldTwo: UITextField!
     @IBOutlet weak var textFieldThree: UITextField!
     @IBOutlet weak var textFieldFour: UITextField!
+    var activeTxtField: UITextField?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +78,9 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
     
     func textFieldDidChange(_ textField: UITextField){
         
+        let texttag = textField.tag
+        print(texttag)
+        
         let text = textField.text
       
             if text?.utf16.count==1{
@@ -96,7 +100,7 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
                 switch textField{
                 case textFieldFour:
                     textFieldThree.becomeFirstResponder()
-                case textFieldThree:
+                case textFieldTwo:
                     textFieldTwo.becomeFirstResponder()
                 case textFieldTwo:
                     textFieldOne.becomeFirstResponder()
@@ -108,6 +112,8 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
             }
     }
     
+   
+    
     func textFieldDidBeginEditing(_ textField: UITextField) {
  
         if (textFieldOne.text == "" || textFieldTwo.text ==  "" || textFieldThree.text == "" || textFieldFour.text == "")
@@ -116,14 +122,15 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
             print("somthing")
         }else{
             print("udsgfgs")
-//            textFieldFour.becomeFirstResponder()  
-            
+            textFieldFour.becomeFirstResponder()  
         }
     }
+    
     
     func responder(){
         self.textFieldOne.becomeFirstResponder()
     }
+
     /*
      * Called when 'return' key pressed. return NO to ignore.
      */
@@ -139,7 +146,57 @@ class PasscodeTextFieldVC: UIViewController,UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-  
-    
+}
 
+//MARK: - UITextField Methods
+
+extension PasscodeTextFieldVC: UITextFieldDelegate {
+    
+    private func textFieldDidBeginEditing(textField: UITextField) {
+        
+        activeTxtField = textField
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if let passcodeTextField = textField as? TxtFieldGloabClass {
+            let text = ((textField.text ?? "") as NSString).replacingCharacters(in: range, with: string)
+            
+            if text.characters.count > 0 || string == "" {
+                if string == ""  {
+                    if passcodeTextField.previousTextField != nil {
+                        if passcodeTextField.text?.characters.count == 0 {
+                            passcodeTextField.previousTextField?.text = ""
+                        } else {
+                            passcodeTextField.text = ""
+                        }
+                        
+                        passcodeTextField.isUserInteractionEnabled = false
+                        passcodeTextField.previousTextField?.isUserInteractionEnabled = true
+                        passcodeTextField.previousTextField?.becomeFirstResponder()
+                        return false
+                    } else {
+                        passcodeTextField.text = ""
+                    }
+                } else {
+                    if passcodeTextField.nextTextField != nil {
+                        passcodeTextField.text = string
+                        passcodeTextField.isUserInteractionEnabled = false
+                        passcodeTextField.nextTextField?.isUserInteractionEnabled = true
+                        passcodeTextField.nextTextField?.becomeFirstResponder()
+                        return false
+                    } else {
+                        passcodeTextField.text = string
+                        passcodeTextField.resignFirstResponder()
+                        return false
+                    }
+                }
+            }
+        }
+        return true
+    }
 }

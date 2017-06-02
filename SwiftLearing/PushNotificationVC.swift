@@ -17,7 +17,7 @@ class PushNotificationVC: UIViewController {
         super.viewDidLoad()
         
          let DEVICE_TOKEN =  UserDefaults.standard.string(forKey: userKeyConstant)
-         print(DEVICE_TOKEN)
+         print(DEVICE_TOKEN ?? "DEVICE_TOKEN Values is Empty")
         self.deviceToken.text = DEVICE_TOKEN
  
     }
@@ -32,17 +32,6 @@ class PushNotificationVC: UIViewController {
         
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
 

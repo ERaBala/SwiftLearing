@@ -8,33 +8,47 @@
 
 import UIKit
 
-class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchDisplayDelegate, UISearchBarDelegate {
+class MainTableViewController: UIViewController {
     
-//    var IndexArray: Array<String> = []
-    var IndexArray = [String]()
-    var filteredArray = [String]()
-    var dictionaryvalues = [Int : String] ()  // Assain Dictionary value
+    var IndexArray          = [String]()
+    var filteredArray       = [String]()
+    var dictionaryvalues    = [Int : String] ()  // Assain Dictionary value
     
     var Tag = [Int]()
     
-      var countryName : String!
+    var countryName : String!
     var shouldShowSearchResults = false
     
     @IBOutlet weak var Tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.Tableview.dataSource = self
         self.Tableview.delegate = self
         
-        IndexArray = ["1.Get local Json values","2.Get Web Site HTML Source","3.Local notification","4.Location base activity in Map","5.Push Notification Function","6.Text Field Passcode","7.Stripe Integration"];
-//        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
-     
+        IndexArray = ["1.Get local Json values", "2.Get Web Site HTML Source", "3.Local Push Notification", "4.Location base activity in Map", "5.Push Notification Function", "6.Text Field Passcode", "7.Stripe Integration", "8.MVVM"];
+        //        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
+        
         self.Tableview.reloadData()
-      
         
     }
+    
+//    MARK: called when 'return' key pressed. return NO to ignore.
+    
+    func textFieldShouldReturn(textField: UITextField!) -> Bool //
+    {
+        return true;
+    }
+    
+}
 
+
+//  MARK:- Tableview DataSource and Delegate Method
+
+extension MainTableViewController : UITableViewDelegate, UITableViewDataSource
+{
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if tableView == self.searchDisplayController!.searchResultsTableView {
@@ -47,7 +61,7 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = self.Tableview.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
-      
+        
         if tableView == self.searchDisplayController!.searchResultsTableView {
             countryName = filteredArray[indexPath.row]
         } else {
@@ -73,29 +87,37 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "JsonView") as! ViewController
             UserDefaultFunction(defaultName: "JsonView", defaultKey: "TUTORIAL_ID") .NSStringForKey()
             self.navigationController?.pushViewController(secondViewController, animated: true)
+            
         case "2.Get Web Site HTML Source":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "WebPageSource") as! getWebPageSource
             UserDefaultFunction(defaultName: "WebPageSource", defaultKey: "TUTORIAL_ID") .NSStringForKey()
             self.navigationController?.pushViewController(secondViewController, animated: true)
+            
         case "3.Local notification":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "LocalNotification") as! LocalNotificationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
+            
         case "4.Location base activity in Map":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "location") as! LocationViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
+            
         case "5.Push Notification Function":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "PushNotification") as! PushNotificationVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
+            
         case "6.Text Field Passcode":
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Passcode") as! PasscodeTextFieldVC
             self.navigationController?.pushViewController(secondViewController, animated: true)
-           
-//        case 7:
-//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
-//        case 8:
-//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
+            
+        case "7.Stripe Integration":
+//            let storyboard = UIStoryboard(name: "Fabric", bundle: nil)
+        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "StripsViewController") as! StripsViewController
+        self.navigationController?.pushViewController(secondViewController, animated: true)
+            
+        case "8.MVVM":
+            let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "MVVM") as! MVVMTabelView
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+            
 //        case 9:
 //            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
 //            self.navigationController?.pushViewController(secondViewController, animated: true)
@@ -106,10 +128,12 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
             break;
         }
     }
-    
-    
+}
 
-    // *************************** Search Datasource and Deligate methods ************************************ // 
+
+//  MARK:-  Search Datasource and Deligate methods
+
+extension MainTableViewController : UISearchDisplayDelegate, UISearchBarDelegate {
     
     func filterTableViewForEnterText(_ searchText: String)
     {
@@ -130,9 +154,4 @@ class MainTableViewController: UIViewController,UITableViewDelegate,UITableViewD
         return true
     }
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
-    {
-        return true;
-    }
-
 }

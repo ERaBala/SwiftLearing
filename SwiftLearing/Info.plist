@@ -34,7 +34,7 @@
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
-		<string>2e6ae4cae003b2bfffc43ed414ac41857cace231</string>
+		<string>927a370500d587fddcfb7494ecb5a1b32288e3c0</string>
 		<key>Kits</key>
 		<array>
 			<dict>
@@ -45,6 +45,12 @@
 				</dict>
 				<key>KitName</key>
 				<string>STPAPIClient</string>
+			</dict>
+			<dict>
+				<key>KitInfo</key>
+				<dict/>
+				<key>KitName</key>
+				<string>Crashlytics</string>
 			</dict>
 		</array>
 	</dict>
