@@ -27,11 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return[ ViewModel(model : Bala),ViewModel(model : tyzon),ViewModel(model : nas),ViewModel(model : sesha)]
     }()
 
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         if(UIApplication.instancesRespond(to: #selector(UIApplication.registerUserNotificationSettings(_:)))) {
             UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
         }
+        
+        
         
         let types: UIUserNotificationType = [UIUserNotificationType.badge ,
             UIUserNotificationType.alert,

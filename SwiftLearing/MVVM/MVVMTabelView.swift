@@ -12,17 +12,6 @@ class MVVMTabelView: UIViewController {
 
     let Employ : [ViewModel] = (UIApplication.shared.delegate as! AppDelegate).EmpDetails
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-  
 }
 
 extension MVVMTabelView : UITableViewDataSource, UITableViewDelegate{
@@ -39,7 +28,7 @@ extension MVVMTabelView : UITableViewDataSource, UITableViewDelegate{
         cell.textLabel?.text = EmplViewModel.nameTxt
         return cell
     }
-    
+
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }

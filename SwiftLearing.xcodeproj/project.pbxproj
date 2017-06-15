@@ -33,6 +33,10 @@
 		D46BB7651EE165B900885620 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BB7641EE165B900885620 /* Model.swift */; };
 		D46BB7671EE1673E00885620 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BB7661EE1673E00885620 /* ViewModel.swift */; };
 		D46BB7691EE1780500885620 /* MVVMTabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46BB7681EE1780500885620 /* MVVMTabelView.swift */; };
+		D4A28BA61EF2996100B1E064 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A28BA51EF2996100B1E064 /* User.swift */; };
+		D4A28BA81EF299B100B1E064 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A28BA71EF299B100B1E064 /* NetworkManager.swift */; };
+		D4A28BAA1EF29BEE00B1E064 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A28BA91EF29BEE00B1E064 /* ProfileTableViewCell.swift */; };
+		D4B4EBA71EF11DBF00C4C484 /* InstagramIntegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B4EBA61EF11DBF00C4C484 /* InstagramIntegation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		D46BB7641EE165B900885620 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = SwiftLearing/MVVM/Model.swift; sourceTree = "<group>"; };
 		D46BB7661EE1673E00885620 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewModel.swift; path = SwiftLearing/MVVM/ViewModel.swift; sourceTree = "<group>"; };
 		D46BB7681EE1780500885620 /* MVVMTabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MVVMTabelView.swift; path = SwiftLearing/MVVM/MVVMTabelView.swift; sourceTree = "<group>"; };
+		D4A28BA51EF2996100B1E064 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Social/User.swift; sourceTree = "<group>"; };
+		D4A28BA71EF299B100B1E064 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Social/NetworkManager.swift; sourceTree = "<group>"; };
+		D4A28BA91EF29BEE00B1E064 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewCell.swift; path = Social/ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		D4B4EBA61EF11DBF00C4C484 /* InstagramIntegation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InstagramIntegation.swift; path = Social/InstagramIntegation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,7 @@
 		CEAC0C1D1CF42ACF00B0B1A0 /* SwiftLearing */ = {
 			isa = PBXGroup;
 			children = (
+				D4A28BA41EF2988600B1E064 /* Instagram */,
 				CE5534FE1D59FD75005422B3 /* SwiftLearing.entitlements */,
 				CEAC0C221CF42AD000B0B1A0 /* Main.storyboard */,
 				CE6071951D3F454400A1904C /* MainTableViewController.swift */,
@@ -207,6 +216,17 @@
 				D46BB7681EE1780500885620 /* MVVMTabelView.swift */,
 			);
 			name = MVVM;
+			sourceTree = "<group>";
+		};
+		D4A28BA41EF2988600B1E064 /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				D4A28BA51EF2996100B1E064 /* User.swift */,
+				D4A28BA71EF299B100B1E064 /* NetworkManager.swift */,
+				D4B4EBA61EF11DBF00C4C484 /* InstagramIntegation.swift */,
+				D4A28BA91EF29BEE00B1E064 /* ProfileTableViewCell.swift */,
+			);
+			name = Instagram;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +279,9 @@
 								enabled = 1;
 							};
 							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
 								enabled = 1;
 							};
 							com.apple.Wallet = {
@@ -383,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A28BA81EF299B100B1E064 /* NetworkManager.swift in Sources */,
 				D46BB7611EE1463800885620 /* StripsViewController.swift in Sources */,
 				CEA05DDE1D4749CB007AABD8 /* PasscodeTextFieldVC.swift in Sources */,
 				CE6071981D3F734500A1904C /* LocalNotificationVC.swift in Sources */,
@@ -395,10 +419,13 @@
 				CE7F14621D40D4A90074825C /* LocationViewController.swift in Sources */,
 				D4498B721ED311F70096FFB8 /* DefaultTextField.swift in Sources */,
 				D46BB7671EE1673E00885620 /* ViewModel.swift in Sources */,
+				D4A28BAA1EF29BEE00B1E064 /* ProfileTableViewCell.swift in Sources */,
 				CE7189821D58B45600D1F397 /* TutorialTabelVC.swift in Sources */,
 				CEAC0C211CF42AD000B0B1A0 /* ViewController.swift in Sources */,
+				D4A28BA61EF2996100B1E064 /* User.swift in Sources */,
 				CE7589C41D4238BB00DE27D4 /* PushNotificationVC.swift in Sources */,
 				CEAC0C1F1CF42AD000B0B1A0 /* AppDelegate.swift in Sources */,
+				D4B4EBA71EF11DBF00C4C484 /* InstagramIntegation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

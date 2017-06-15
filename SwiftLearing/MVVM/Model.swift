@@ -21,6 +21,5 @@ class Model {
         self.empEnvironment = Environment
         self.empProfilePic = ProfilePic
     }
-    
-    
+
 }

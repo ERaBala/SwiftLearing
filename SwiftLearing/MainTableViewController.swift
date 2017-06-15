@@ -27,7 +27,7 @@ class MainTableViewController: UIViewController {
         self.Tableview.dataSource = self
         self.Tableview.delegate = self
         
-        IndexArray = ["1.Get local Json values", "2.Get Web Site HTML Source", "3.Local Push Notification", "4.Location base activity in Map", "5.Push Notification Function", "6.Text Field Passcode", "7.Stripe Integration", "8.MVVM"];
+        IndexArray = ["1.Get local Json values", "2.Get Web Site HTML Source", "3.Local Push Notification", "4.Location base activity in Map", "5.Push Notification Function", "6.Text Field Passcode", "7.Stripe Integration", "8.MVVM", "9.Instagram"];
         //        Tag = ["#localjson","#HTML","#LocalNotification","#Map","#PushNotification","#TextField"];
         
         self.Tableview.reloadData()
@@ -118,9 +118,10 @@ extension MainTableViewController : UITableViewDelegate, UITableViewDataSource
             let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "MVVM") as! MVVMTabelView
             self.navigationController?.pushViewController(secondViewController, animated: true)
             
-//        case 9:
-//            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("WebPageSource") as! getWebPageSource
-//            self.navigationController?.pushViewController(secondViewController, animated: true)
+        case "9.Instagram":
+            let storyboard = UIStoryboard(name: "Fabric", bundle: nil)
+            let secondViewController = storyboard.instantiateViewController(withIdentifier: "InstagramIntegation") as! InstagramIntegation
+            self.navigationController?.pushViewController(secondViewController, animated: true)
 //        case 10:
 //            let secondViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LocalNotification") as! LocalNotificationVC
 //            self.navigationController?.pushViewController(secondViewController, animated: true)
